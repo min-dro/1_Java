@@ -6,13 +6,13 @@ public class RockPaper extends Player{
 	Player user = new Player();
 	Scanner sc = new Scanner(System.in);
 	public void start() {
-		System.out.println("====== °¡À§|¹ÙÀ§|º¸ ======");
-		System.out.println(" 1. °¡À§, 2.¹ÙÀ§, 3.º¸ ");
+		System.out.println("====== ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ ======");
+		System.out.println(" 1. ï¿½ï¿½ï¿½ï¿½, 2.ï¿½ï¿½ï¿½ï¿½, 3.ï¿½ï¿½ ");
 		System.out.println("======================");
 		int com = (int)(Math.random()*3+1);
 		int cnt = user.getScore();
 		for(int i=0;i==1;) {
-			System.out.println("¼±ÅÃ : ");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ : ");
 			int select = sc.nextInt();
 			if(select < com) {
 				if(select == 1 && com == 3) {

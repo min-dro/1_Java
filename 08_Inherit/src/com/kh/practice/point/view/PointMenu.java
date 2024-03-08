@@ -12,11 +12,11 @@ public class PointMenu {
 	private RectangleController rc = new RectangleController();
 	public void mainMenu() {
 		do {
-			System.out.println("===== ¸Þ´º =====");
-			System.out.println("1. ¿ø");
-			System.out.println("2. »ç°¢Çü");
-			System.out.println("9. ³¡³»±â");
-			System.out.print("¸Þ´º ¹øÈ£ :");
+			System.out.println("===== ï¿½Þ´ï¿½ =====");
+			System.out.println("1. ï¿½ï¿½");
+			System.out.println("2. ï¿½ç°¢ï¿½ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ :");
 			int select = sc.nextInt();
 			switch(select) {
 			case 1:
@@ -26,20 +26,20 @@ public class PointMenu {
 				rectangleMenu();
 				break;
 			case 9:
-				System.out.println("Á¾·áÇÕ´Ï´Ù");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½");
 				return;
 			}
 			
-			// select °ªÀÌ 1, 2, 9°¡ ¾Æ´Ñ°æ¿ì °Ô¼Ó ¹Ýº¹¹®À» ½ÇÇà
+			// select ï¿½ï¿½ï¿½ï¿½ 1, 2, 9ï¿½ï¿½ ï¿½Æ´Ñ°ï¿½ï¿½ ï¿½Ô¼ï¿½ ï¿½Ýºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		} while(true);
 	}
-	// ¿ø ¸Þ´º Ãâ·Â. Àß¸ø ÀÔ·ÂÇßÀ» ½Ã ¸ÞÀÎ¸Þ´º·Î µ¹¾Æ°¨
+	// ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½. ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Î¸Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½
 	public void circleMenu() {
-		System.out.println("===== ¿ø ¸Þ´º =====");
-		System.out.println("1. ¿ø µÑ·¹");
-		// sysout ÀÔ·ÂÈÄ Ctrl + Space : System.out.println
-		System.out.println("2. ¿ø ³ÐÀÌ");
-		System.out.println("9. ¸ÞÀÎÀ¸·Î");
+		System.out.println("===== ï¿½ï¿½ ï¿½Þ´ï¿½ =====");
+		System.out.println("1. ï¿½ï¿½ ï¿½Ñ·ï¿½");
+		// sysout ï¿½Ô·ï¿½ï¿½ï¿½ Ctrl + Space : System.out.println
+		System.out.println("2. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		int select = sc.nextInt();
 		switch(select) {
 			case 1:
@@ -50,13 +50,13 @@ public class PointMenu {
 			case 9:
 			}
 		}
-	// »ç°¢Çü ¸Þ´º Ãâ·Â. Àß¸ø ÀÔ·ÂÇßÀ» ½Ã ¸ÞÀÎ¸Þ´º·Î µ¹¾Æ°¨ 
+	// ï¿½ç°¢ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½. ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Î¸Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ 
 	public void rectangleMenu() {
-		System.out.println("===== ¸Þ´º =====");
-		System.out.println("1. »ç°¢Çü µÑ·¹");
-		System.out.println("2. »ç°¢Çü ³ÐÀÌ");
-		System.out.println("9. ¸ÞÀÎÀ¸·Î");
-		System.out.println("¸Þ´º ¹øÈ£ : ");
+		System.out.println("===== ï¿½Þ´ï¿½ =====");
+		System.out.println("1. ï¿½ç°¢ï¿½ï¿½ ï¿½Ñ·ï¿½");
+		System.out.println("2. ï¿½ç°¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("ï¿½Þ´ï¿½ ï¿½ï¿½È£ : ");
 		
 		int select = sc.nextInt();
 		switch(select) {
@@ -68,75 +68,75 @@ public class PointMenu {
 		case 9:
 		}
 	}
-	// x, y ÁÂÇ¥¿Í ¹ÝÁö¸§À» ¹Þ¾Æ ¿øÀÇ Á¤º¸¿Í ¿ø µÑ·¹ Ãâ·Â
+	// x, y ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ñ·ï¿½ ï¿½ï¿½ï¿½
 	public void calcCircum() {
-		// xÁËÇ¥, yÁÂÇ¥, ¹ÝÁö¸§ÀÇ °ªÀ» ÀÔ·Â¹Þ¾Æ
-		System.out.println("x ÁÂÇ¥ : ");
+		// xï¿½ï¿½Ç¥, yï¿½ï¿½Ç¥, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ¾ï¿½
+		System.out.println("x ï¿½ï¿½Ç¥ : ");
 		int x = sc.nextInt();
 		
-		System.out.println("y ÁÂÇ¥ : ");
+		System.out.println("y ï¿½ï¿½Ç¥ : ");
 		int y = sc.nextInt();
 		
-		System.out.println("¹ÝÁö¸§ : ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
 		int r = sc.nextInt();
 		
-		// CircleController ÀÇ calcCircum() ¸Þ¼Òµå¸¦ È£Ãâ
-		//	- ÀÔ·Â¹ÞÀº x, y, ¹ÝÁö¸§ÀÇ °ªÀ» Àü´ÞÇÏ¿© È£Ãâ calcCircum(x, y, r)
+		// CircleController ï¿½ï¿½ calcCircum() ï¿½Þ¼Òµå¸¦ È£ï¿½ï¿½
+		//	- ï¿½Ô·Â¹ï¿½ï¿½ï¿½ x, y, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ È£ï¿½ï¿½ calcCircum(x, y, r)
 		String result = cc.calcCircum(x, y, r);
 		
-		// ±× °á°ú °ªÀ» Ãâ·Â
-		//	¸Þ¼Òµå È£Ãâ ÈÄ °á°ú °ªÀº ¹®ÀÚ¿­ ÀÚÃ¼·Î Ã³¸® °¡´É
-		//	º¯¼ö¿¡ ´ëÀÔÇÒ ¼öµµ ÀÖ°í, printf¿¡¼­ Áö½Ã¾î·Î %s¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+		// ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//	ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½, printfï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ %sï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
 //		String result = cc.calcCircum(x, y, r);
 //		System.out.println(result);
 		
 	}
-	// x, y ÁÂÇ¥¿Í ¹ÝÁö¸§À» ¹Þ¾Æ ¿øÀÇ Á¤º¸¿Í ¿ø ³ÐÀÌ Ãâ·Â
+	// x, y ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	public void calcCircleArea() {
-		// xÁÂÇ¥, yÁÂÇ¥, ¹ÝÁö¸§À» ÀÔ·Â¹Þ¾Æ
-		System.out.println("x ÁÂÇ¥ : ");
+		// xï¿½ï¿½Ç¥, yï¿½ï¿½Ç¥, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ¾ï¿½
+		System.out.println("x ï¿½ï¿½Ç¥ : ");
 		int x = sc.nextInt();
 		
-		System.out.println("y ÁÂÇ¥ : ");
+		System.out.println("y ï¿½ï¿½Ç¥ : ");
 		int y = sc.nextInt();
 		
-		System.out.println("¹ÝÁö¸§ : ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
 		int r = sc.nextInt();
 		
-		// CircleControllerÀÇ calcArea ¸Þ¼Òµå¸¦ È£Ãâ
-		//	- ÀÔ·Â¹ÞÀº °ªÀ» ¸Å°³º¯¼ö·Î Ãâ·Â
+		// CircleControllerï¿½ï¿½ calcArea ï¿½Þ¼Òµå¸¦ È£ï¿½ï¿½
+		//	- ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	}
-	// x, y ÁÂÇ¥¿Í ³ôÀÌ, ³Êºñ¸¦ ÀÔ·Â¹Þ¾Æ »ç°¢ÇüÀÇ Á¤º¸¿Í µÑ·¹ Ãâ·Â
+	// x, y ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Êºï¿½ ï¿½Ô·Â¹Þ¾ï¿½ ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ·ï¿½ ï¿½ï¿½ï¿½
 	public void calcPerimeter() {
-		System.out.println("x ÁÂÇ¥ : ");
+		System.out.println("x ï¿½ï¿½Ç¥ : ");
 		int x = sc.nextInt();
 		
-		System.out.println("y ÁÂÇ¥ : ");
+		System.out.println("y ï¿½ï¿½Ç¥ : ");
 		int y = sc.nextInt();
 		
-		System.out.println("³ôÀÌ : ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : ");
 		int h = sc.nextInt();
 		
-		System.out.println("³Êºñ : ");
+		System.out.println("ï¿½Êºï¿½ : ");
 		int w = sc.nextInt();
 		
-		// RectangleController ÀÇ calcPerimeter ¸Þ¼Òµå È£Ãâ ÈÄ
-		//	±× °á°ú¸¦ Ãâ·Â
+		// RectangleController ï¿½ï¿½ calcPerimeter ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½ ï¿½ï¿½
+		//	ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		String result = rc.calcPerimeter(x, y, h, w);
 		System.out.println(result);
 	}
-	// x, y ÁÂÇ¥¿Í ³ôÀÌ, ³Êºñ¸¦ ÀÔ·Â¹Þ¾Æ »ç°¢ÇüÀÇ Á¤º¸¿Í ³ÐÀÌ Ãâ·Â
+	// x, y ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Êºï¿½ ï¿½Ô·Â¹Þ¾ï¿½ ï¿½ç°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	public void calcRectArea() {
-		System.out.println("x ÁÂÇ¥ : ");
+		System.out.println("x ï¿½ï¿½Ç¥ : ");
 		int x = sc.nextInt();
 		
-		System.out.println("y ÁÂÇ¥ : ");
+		System.out.println("y ï¿½ï¿½Ç¥ : ");
 		int y = sc.nextInt();
 		
-		System.out.println("³ôÀÌ : ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : ");
 		int h = sc.nextInt();
 		
-		System.out.println("³Êºñ : ");
+		System.out.println("ï¿½Êºï¿½ : ");
 		int w = sc.nextInt();
 		
 		System.out.println(rc.calcArea(x, y, h, w));

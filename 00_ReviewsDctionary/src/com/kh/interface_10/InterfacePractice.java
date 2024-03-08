@@ -1,9 +1,9 @@
 package com.kh.interface_10;
 
-// TestInter ÀÎÅÍÆäÀÌ½º¸¦ ±¸Çö(»ó¼Ó) => implements
+// TestInter ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½) => implements
 public class InterfacePractice implements TestInterface {
 	@Override
-	public int getNumber() {		// ±¸ÇöÇÒ ÀÎÅÍÆäÀÌ½ºÀÇ Ãß»ó¸Þ¼Òµå ÀçÁ¤ÀÇ ½Ã "Á¢±ÙÁ¦ÇÑÀÚ" ÁÖÀÇÇØ¾ß ÇÔ!
+	public int getNumber() {		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½ï¿½!
 		return 10;
 	}
 

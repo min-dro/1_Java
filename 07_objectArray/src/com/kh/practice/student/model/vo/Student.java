@@ -1,12 +1,12 @@
 package com.kh.practice.student.model.vo;
 
 public class Student {
-	// ÇÊµåºÎ(º¯¼ö, µ¥ÀÌÅÍ)
-	private String name;		// ÀÌ¸§
-	private String subject;		// °ú¸ñ
-	private int score;			// Á¡¼ö
+	// ï¿½Êµï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+	private String name;		// ï¿½Ì¸ï¿½
+	private String subject;		// ï¿½ï¿½ï¿½ï¿½
+	private int score;			// ï¿½ï¿½ï¿½ï¿½
 	
-	// »ý¼ºÀÚºÎ(2°³)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½(2ï¿½ï¿½)
 	public Student() {
 		
 	}
@@ -17,7 +17,7 @@ public class Student {
 		this.score = score;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public String getName() {
 		return name;
 	}
@@ -39,7 +39,7 @@ public class Student {
 	
 	public String inform() {
 		// return name + " " + subject + " " + score;
-		// String.format("¹®ÀÚ¿­ Çü½Ä(Áö½Ã¾î Æ÷ÇÔ)", Áö½Ã¾î¿¡ ÇØ´çÇÏ´Â º¯¼ö,)
-		return String.format("ÀÌ¸§ : %s / °ú¸ñ : %s / Á¡¼ö : %d", name, subject, score);
+		// String.format("ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ã¾ï¿½ ï¿½ï¿½ï¿½ï¿½)", ï¿½ï¿½ï¿½Ã¾î¿¡ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½,)
+		return String.format("ï¿½Ì¸ï¿½ : %s / ï¿½ï¿½ï¿½ï¿½ : %s / ï¿½ï¿½ï¿½ï¿½ : %d", name, subject, score);
 	}
 }

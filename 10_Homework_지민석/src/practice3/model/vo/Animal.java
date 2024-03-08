@@ -10,7 +10,7 @@ public abstract class Animal {
 	}
 	
 	public String toString() {
-		return "ÀúÀÇ ÀÌ¸§Àº" + name + "ÀÌ°í, Á¾·ù´Â " + kinds + "ÀÔ´Ï´Ù.";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½" + name + "ï¿½Ì°ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + kinds + "ï¿½Ô´Ï´ï¿½.";
 	}
 	public abstract void speak();
 	

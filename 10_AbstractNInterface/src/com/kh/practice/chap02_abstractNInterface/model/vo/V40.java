@@ -2,50 +2,50 @@ package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public class V40 extends SmartPhone implements NotePen {
 	public V40() {
-		this.setMaker("LG");	// ºÎ¸ð¿¡°Ô »ó¼Ó¹ÞÀº maker ÇÊµå¸¦ "LG"·Î ÃÊ±âÈ­
+		this.setMaker("LG");	// ï¿½Î¸ð¿¡°ï¿½ ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ maker ï¿½Êµå¸¦ "LG"ï¿½ï¿½ ï¿½Ê±ï¿½È­
 	}
 	
 	
 	
 	@Override
 	public String makeCall() {
-		return "¹øÈ£¸¦ ´©¸£°í ÅëÈ­¹öÆ°À» ´©¸§";
+		return "ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String takeCall() {
-		return "¼ö½Å ¹öÆ°À» ´©¸§";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String picture() {
-		return "1200, 1600¸¸ Æ®¸®ÇÃ Ä«¸Þ¶ó";
+		return "1200, 1600ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½";
 	}
 	
 	@Override
 	public String charge() {
-		return "°í¼Ó ÃæÀü, °í¼Ó ¹«¼± ÃæÀü";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String touch() {
-		return "Á¤Àü½Ä";
+		return "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public boolean bluetoothPen() {
-		return !this.PEN_BUTTON;	// ÃÊ±â°ª(true)ÀÇ ºÎÁ¤ => false
+		return !this.PEN_BUTTON;	// ï¿½Ê±â°ª(true)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ => false
 	}
 	
 	@Override
 	public String printInformation() {
-		String info = "V40´Â " + this.getMaker() + "¿¡¼­ ¸¸µé¾îÁ³°í Á¦¿øÀº ´ÙÀ½°ú °°´Ù,\n"
+		String info = "V40ï¿½ï¿½ " + this.getMaker() + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½,\n"
 					+ makeCall() + "\n"
 					+ takeCall() + "\n"
 					+ picture() + "\n"
 					+ charge() + "\n"
 					+ touch() + "\n"
-					+ "ºí·çÅõ½º Ææ Å¾Àç ¿©ºÎ : " + bluetoothPen();
+					+ "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Å¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + bluetoothPen();
 		return info;
 	}
 }

@@ -1,60 +1,60 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
-// SmartPhone Å¬·¡½ººÎÅÍ »ó¼ÓÀ» ¹Þ°í, NotePen ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÏ´Â GalaxyNote9 Å¬·¡½º
+// SmartPhone Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ°ï¿½, NotePen ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ GalaxyNote9 Å¬ï¿½ï¿½ï¿½ï¿½
 public class GalaxyNote9 extends SmartPhone implements NotePen {
 	
-	// ÇÊµåºÎ : ¾øÀ½
-	// - »ó¼ÓÀ¸·Î Phone ÀÎÅÍÆäÀÌ½ºÀÇ NUMBERPAD »ó¼ö
-	//			NotePen ÀÎÅÍÆäÀÌ½ºÀÇ PEN_BUTTON »ó¼ö
-	//			SmartPhone Å¬·¡½ºÀÇ maker º¯¼ö´Â »ç¿ë(Á¢±Ù)
+	// ï¿½Êµï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½
+	// - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Phone ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ NUMBERPAD ï¿½ï¿½ï¿½
+	//			NotePen ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ PEN_BUTTON ï¿½ï¿½ï¿½
+	//			SmartPhone Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ maker ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½)
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public GalaxyNote9() {
-		// ºÎ¸ð¿¡°Ô »ó¼Ó¹ÞÀº maker ÇÊµå¸¦ "»ï¼º"À¸·Î ÃÊ±âÈ­
-		this.setMaker("»ï¼º");
+		// ï¿½Î¸ð¿¡°ï¿½ ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ maker ï¿½Êµå¸¦ "ï¿½ï¼º"ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+		this.setMaker("ï¿½ï¼º");
 	}
 	
-	// ¸Þ¼ÒµåºÎ
-	//	- »ó¼Ó¹ÞÀº Ãß»ó ¸Þ¼Òµå¸¦ ¸ðµÎ ±¸ÇöÇØ¾ß ÇÔ.
+	// ï¿½Þ¼Òµï¿½ï¿½
+	//	- ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½ï¿½.
 	@Override
 	public String makeCall() {
-		return "¹øÈ£¸¦ ´©¸£°í ÅëÈ­¹öÆ°À» ´©¸§";
+		return "ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String takeCall() {
-		return "¼ö½Å ¹öÆ°À» ´©¸§";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String picture() {
-		return "1200¸¸ µà¾ó Ä«¸Þ¶ó";
+		return "1200ï¿½ï¿½ ï¿½ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½";
 	}
 	
 	@Override
 	public String charge() {
-		return "°í¼Ó ÃæÀü, °í¼Ó ¹«¼± ÃæÀü";
+		return "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public String touch() {
-		return "Á¤Àü½Ä, ¿ÜÄÞÆæ Áö¿ø";
+		return "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½";
 	}
 	
 	@Override
 	public boolean bluetoothPen() {
-		return this.PEN_BUTTON; // NotePen ÀÎÅÍÆäÀÌ½º¿¡ Á¤ÀÇµÈ »ó¼ö(ÃÊ±â°ª:true)
+		return this.PEN_BUTTON; // NotePen ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Çµï¿½ ï¿½ï¿½ï¿½(ï¿½Ê±â°ª:true)
 	}
 	
 	@Override
 	public String printInformation() {
-		String info = "°¶·°½Ã ³ëÆ®9Àº "+ this.getMaker() +"¿¡¼­ ¸¸µé¾îÁ³¼Ò Á¦¿øÀº ´ÙÀ½°ú °°´Ù\n"
+		String info = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®9ï¿½ï¿½ "+ this.getMaker() +"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n"
 				+ makeCall() + "\n"
 				+ takeCall() + "\n"
 				+ touch() + "\n"
 				+ charge() + "\n"
 				+ touch() + "\n"
-				+ "ºí·çÅõ±× Ææ Å¾Àç ¿©ºÎ : " + bluetoothPen();
+				+ "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Å¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + bluetoothPen();
 		return "";
 	}
 }

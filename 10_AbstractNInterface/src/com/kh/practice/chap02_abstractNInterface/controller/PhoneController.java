@@ -2,30 +2,30 @@ package com.kh.practice.chap02_abstractNInterface.controller;
 
 import com.kh.practice.chap02_abstractNInterface.model.vo.*;
 public class PhoneController {
-	// ÇÊµåºÎ(º¯¼ö/ÇÊµå/¸É¹öº¯¼ö)
+	// ï¿½Êµï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½/ï¿½Êµï¿½/ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½)
 	private String[] result = new String[2];
 	
-	// »ý¼ºÀÚºÎ: ¾øÀ½ => ±âº»»ý¼ºÀÚ(public Phonecontroller() {})°¡ ÀÚµ¿À¸·Î »ý¼º
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½: ï¿½ï¿½ï¿½ï¿½ => ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(public Phonecontroller() {})ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public String[] method() {
 		Phone[] phArr = new Phone[2];
 		
-		phArr[0] = new GalaxyNote9();	// ¹è¿­ÀÇ Ã¹¹øÂ° À§Ä¡¿¡
-										// GalaxyNote9 Å¬·¡½º·Î °´Ã¼ »ý¼º
-		phArr[1] = new V40();			// ¹è¿­ÀÇ µÎ¹øÂ° À§Ä¡¿¡
-										// V40 Å¬·¡½º·Î °´Ã¼ »ý¼º
+		phArr[0] = new GalaxyNote9();	// ï¿½è¿­ï¿½ï¿½ Ã¹ï¿½ï¿½Â° ï¿½ï¿½Ä¡ï¿½ï¿½
+										// GalaxyNote9 Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+		phArr[1] = new V40();			// ï¿½è¿­ï¿½ï¿½ ï¿½Î¹ï¿½Â° ï¿½ï¿½Ä¡ï¿½ï¿½
+										// V40 Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 		
 		for(int i=0; i<phArr.length; i++) {
 			int rIndex = 0;
-			// instanceof : i¹øÂ°¿¡ À§Ä¡¿¡ ÀÖ´Â ÂüÁ¶º¯¼ö°¡ ¾î¶² °´Ã¼¸¦ ÂüÁ¶ÇÏ°í ÀÖ´ÂÁö È®ÀÎ
-			//					  ¾î¶² °´Ã¼¸¦ ÂüÁ¶ÇÏ°í ÀÖ´ÂÁö È®ÀÎ
+			// instanceof : iï¿½ï¿½Â°ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½î¶² ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
+			//					  ï¿½î¶² ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 			if(phArr[i] instanceof GalaxyNote9) {
 				result[rIndex] = ((GalaxyNote9)phArr[i]).printInformation();
 				rIndex++;
-				// (GalaxyNote9(phArr[i]))°¡ V40 Å¬·¡½º °´Ã¼¸¦ ÂüÁ¶º¯¼ö¸¦ GalaxyNote9 Å¬·¡½º Å¸ÀÔÀ¸·Î Çü º¯È¯(´Ù¿îÄ³½ºÆÃ)
+				// (GalaxyNote9(phArr[i]))ï¿½ï¿½ V40 Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GalaxyNote9 Å¬ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È¯(ï¿½Ù¿ï¿½Ä³ï¿½ï¿½ï¿½ï¿½)
 			} else if(phArr[i] instanceof V40) {
-				// i¹øÂ°ÀÇ À§Ä¡ÀÇ ÂüÁ¶º¯¼ö(phArr[i])
+				// iï¿½ï¿½Â°ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(phArr[i])
 				result[rIndex] = ((V40)phArr[i]).printInformation();
 			}
 		}

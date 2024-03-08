@@ -9,24 +9,24 @@ import com.kh.set.practice.Member;
 
 public class MapPractice {
 	/*
-	 * Map<K, V>ÀÇ Æ¯Â¡
-	 * : key-value Çü½ÄÀ¸·Î µ¥ÀÌÅÍ¸¦ ÀúÀå.
-	 * 	 key¿¡ ÇØ´çÇÏ´Â µ¥ÀÌÅÍ´Â Áßº¹ Çã¿ëµÇÁö ¾ÊÀ½ (Set ¹æ½Ä)
-	 * 	 value¿¡ ÇØ´çÇÏ´Â µ¥ÀÌÅÍ´Â key°ªÀÌ Áßº¹µÇÁö ¾ÊÀ¸¸é Áßº¹ÀÌ Çã¿ë (List ¹æ½Ä)
+	 * Map<K, V>ï¿½ï¿½ Æ¯Â¡
+	 * : key-value ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½.
+	 * 	 keyï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (Set ï¿½ï¿½ï¿½)
+	 * 	 valueï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ keyï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (List ï¿½ï¿½ï¿½)
 	 * 
-	 * - ¸Þ¼Òµå
-	 * 	 (1) µ¥ÀÌÅÍ Ãß°¡ : put(Å°¿¡ ÇØ´çÇÏ´Â °ª, µ¥ÀÌÅÍ¿¡ ÇØ´çÇÏ´Â °ª)
-	 * 	 (2) µ¥ÀÌÅÍ »èÁ¦ : remove(Å°¿¡ ÇØ´çÇÏ´Â °ª)
-	 * 	 (3) µ¥ÀÌÅÍ Á¶È¸ : get(Å°¿¡ ÇØ´çÇÏ´Â °ª)
-	 * 	 (4) Å° ¸ñ·Ï Á¶È¸ : keqSet()
-	 * 	 (5) µ¥ÀÌÅÍ ±æÀÌ Á¶È¸ : size()
+	 * - ï¿½Þ¼Òµï¿½
+	 * 	 (1) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ : put(Å°ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½)
+	 * 	 (2) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : remove(Å°ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½)
+	 * 	 (3) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ : get(Å°ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½)
+	 * 	 (4) Å° ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ : keqSet()
+	 * 	 (5) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ : size()
 	 */
 	public static void main(String args) {
 		MemberHashMap memberHashMap = new MemberHashMap();
 		
-		memberHashMap.addMember(new Member(1000, "È«±æµ¿"));
-		memberHashMap.addMember(new Member(2000, "¾Æ¹«°³"));
-		memberHashMap.addMember(new Member(3000, "¾ÆÀÌÀ¯"));
+		memberHashMap.addMember(new Member(1000, "È«ï¿½æµ¿"));
+		memberHashMap.addMember(new Member(2000, "ï¿½Æ¹ï¿½ï¿½ï¿½"));
+		memberHashMap.addMember(new Member(3000, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
 		
 		memberHashMap.showAllMember();
 		
@@ -37,31 +37,31 @@ public class MapPractice {
 		memberHashMap.showAllMember();
 	}
 	public static void hashMapTest() {
-		// HashMap ÄÝ·º¼ÇÀ» »ç¿ëÇÏ¿© µ¥ÀÌÅÍ¸¦ Ã³¸® => ÀÎ½ºÅÏ½º »ý¼º
-		//  Key : Á¤¼öÇü µ¥ÀÌÅÍ, value : ¹®ÀÚ¿­ µ¥ÀÌÅÍ
+		// HashMap ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ Ã³ï¿½ï¿½ => ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//  Key : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, value : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Map<Integer, String> hashMap = new HashMap<>();
 		
-		hashMap.put(3000, "SSG");	// ÀÎÃµ
-		hashMap.put(3001, "Å°¿ò");	// ¼­¿ï
-		hashMap.put(3002, "·Ôµ¥");	// ºÎ»ê
+		hashMap.put(3000, "SSG");	// ï¿½ï¿½Ãµ
+		hashMap.put(3001, "Å°ï¿½ï¿½");	// ï¿½ï¿½ï¿½ï¿½
+		hashMap.put(3002, "ï¿½Ôµï¿½");	// ï¿½Î»ï¿½
 		
-		// Å° ¸ñ·Ï Á¶È¸ ÈÄ Map¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ¸¦ Ãâ·Â
+		// Å° ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ ï¿½ï¿½ Mapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½
 		Set<Integer> keyList = hashMap.keySet();
 		
-		for(Integer k : keyList) {	// keyList(Å° ¸ñ·Ï)¿¡¼­ k(Å° °ª)¶ó´Â °ªÀ» ÇÏ³ª¾¿ »ç¿ë
-			// µ¥ÀÌÅÍ Á¶È¸
+		for(Integer k : keyList) {	// keyList(Å° ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ k(Å° ï¿½ï¿½)ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 			System.out.println( k + ":" + hashMap.get(k));
 		}
 		
-		// "Å°¿ò" µ¥ÀÌÅÍ¸¦ Á¦°Å
+		// "Å°ï¿½ï¿½" ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 		hashMap.remove(3001);
 		
 		System.out.println("*".repeat(20));
 	
 		keyList = hashMap.keySet();
 		for(Iterator<Integer> iter = keyList.iterator(); iter.hasNext();) {
-			Inter = iter.next();		// iter.next() : Å° °ªÀ» ÇÏ³ª¾¿ Á¶È¸
-																// hashMap.get(key) : °ª ±âÁØÀ¸·Î map¿¡¼­ µ¥ÀÌÅÍ Á¶ghl
+			Inter = iter.next();		// iter.next() : Å° ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
+																// hashMap.get(key) : ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ mapï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ghl
 		}
 	}
 }

@@ -1,20 +1,20 @@
 package com.kh.practice.chap01_poly.model.vo;
 
-//ºÎ¸ð Å¬·¡½º
-// Ã¥ °´Ã¼
+//ï¿½Î¸ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
+// Ã¥ ï¿½ï¿½Ã¼
 public class Book {
-	// ÇÊµåºÎ (3)
-	private String title;		// µµ¼­¸í
-	private String author;		// ÀúÀÚ¸í
-	private String publisher;	// ÃâÆÇ»ç
+	// ï¿½Êµï¿½ï¿½ (3)
+	private String title;		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String author;		// ï¿½ï¿½ï¿½Ú¸ï¿½
+	private String publisher;	// ï¿½ï¿½ï¿½Ç»ï¿½
 	
-	// »ý¼ºÀÚ (2) : ±âº»»ý¼ºÀÚ, ¸Å°³º¯¼ö 3°³¸¦ ¹Þ´Â »ý¼ºÀÚ(title, author, publisher)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (2) : ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(title, author, publisher)
 	public Book() {}
 	
 	public Book(String title, String author, String publisher) {
-		this.title = title;				// µµ¼­¸í
-		this.author = author;			// ÀúÀÚ¸í
-		this.publisher = publisher;		// ÃâÆÇ»ç
+		this.title = title;				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		this.author = author;			// ï¿½ï¿½ï¿½Ú¸ï¿½
+		this.publisher = publisher;		// ï¿½ï¿½ï¿½Ç»ï¿½
 	}
 	public String toString() {
 		return String.format("=%s / %s / %s", title, author, publisher);

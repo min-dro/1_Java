@@ -1,23 +1,23 @@
 package com.kh.practice.list.music.model.compare;
 
 import java.util.Comparator;
-// ¸®½ºÆ® Á¤·Ä °ü·Ã Å¬·¡½º
-//	[1] Comparator ÀÎÅÍÆäÀÌ½º ±¸Çö Á¤ÀÇ
-//	[2] comparator ¸Þ¼Òµå¸¦ ÀçÁ¤ÀÇ
+// ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
+//	[1] Comparator ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	[2] comparator ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class AscTitle implements Comparator {
-	// ¿À¹ö¶óÀÌµù ÀÚµ¿ ¿Ï¼º ´ÜÃàÅ° : Alt + Shift + S / V
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Úµï¿½ ï¿½Ï¼ï¿½ ï¿½ï¿½ï¿½ï¿½Å° : Alt + Shift + S / V
 	@Override
 	public int compare(Object o1, Object o2) {
 		// TODO Auto-generated method stub
 		
-		// TitleÀÇ ³»¸²Â÷¼øÀ¸·Î Á¤·Ä
-		//	Á¤¼ö/½Ç¼ö
-		//	* ¿À¸§Â÷¼ø : o1 - o2
-		//	* ³»¸²Â÷¼ø : o2 - o1
+		// Titleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//	ï¿½ï¿½ï¿½ï¿½/ï¿½Ç¼ï¿½
+		//	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : o1 - o2
+		//	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : o2 - o1
 		
-		//	¹®ÀÚ¿­ÀÇ °æ¿ì
-		//	* ¿À¸§Â÷¼ø : o1.getTitle().compareTo(o2.getTitle())
-		//	* ³»¸²Â÷¼ø : o2.getTitle().compareTo(o1.getTitle())
+		//	ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : o1.getTitle().compareTo(o2.getTitle())
+		//	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : o2.getTitle().compareTo(o1.getTitle())
 		if(o1 > o2) {
 			return o2 - o1;
 		} else if (o1 == String && o2 == String) {

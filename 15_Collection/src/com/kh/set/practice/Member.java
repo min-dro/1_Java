@@ -1,26 +1,26 @@
 package com.kh.set.practice;
 
 public class Member {
-	// ÇÊµå
+	// ï¿½Êµï¿½
 	// -memberId:int
 	// -memberName:String
-	// * Á¢±ÙÁ¦ÇÑÀÚ Å¬·¡½º ´ÙÀÌ¾î±×·¥ ±âÈ£: + > # > ~ > -
+	// * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½×·ï¿½ ï¿½ï¿½È£: + > # > ~ > -
 	private int memberId;
 	private String memberName;
 	
 	
 	// +Member(memberId:int, memberName:String)
 	public Member(int memberId, String memberName) {
-		// ¸Å°³º¯¼ö°¡ ÀÖ´Â °æ¿ì ´ë°³ÃÊ±âÈ­ ÀÛ¾÷À» ¼öÇØ
+		// ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ ï¿½ë°³ï¿½Ê±ï¿½È­ ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		this.memberId = memberId;
 		this.memberName = memberName;
 	}
 	
-	// ¸Þ¼Òµå
+	// ï¿½Þ¼Òµï¿½
 	//	getter/setter
-	//	+hashCode():int					// memberId¸¦ ±âÁØ°ªÀ¸·Î Á¤ÀÇ
-	//	+equals(obj:Object):boolean		// ÇöÀç °´Æä¿Í Àü´ÞµÈ °´ÆäÀÇ memberId°¡ µ¿ÀÏÇÏ¸é true, ±×·¸Áö ¾ÊÀ¸¸é false
-	//	+toString():String				// ÇöÀç °´Ã¼ÀÇ ÇÊµå Á¤º¸¸¦ Ãâ·Â. Æ÷¸Ë: "[memberId] memberName"
+	//	+hashCode():int					// memberIdï¿½ï¿½ ï¿½ï¿½ï¿½Ø°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	//	+equals(obj:Object):boolean		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ memberIdï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ true, ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ false
+	//	+toString():String				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½: "[memberId] memberName"
 	public int getMemberId() {
 		return memberId;
 	}
@@ -38,18 +38,18 @@ public class Member {
 	@Override
 	public int hashCode() {
 		return memberId;
-		// Á¤¼ö µ¥ÀÌÅÍ°¡ ¾Æ´Ñ °æ¿ì´Â .hashCode() ¸Þ¼Òµå¸¦ ÅëÇØ ÇØ½Ã°ªÀ» ¹ÝÈ¯
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ .hashCode() ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	}
 	public boolean equals(Object obj) {
-		// Àü´ÞµÈ °´Ã¼°¡ Member Å¸ÀÔÀÎÁö È®ÀÎ : instanceof
+		// ï¿½ï¿½ï¿½Þµï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ Member Å¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ : instanceof
 		if (obj instanceof Member){
-			// Àü´ÞµÈ °´Ã¼¿Í ÇöÀç °´Ã¼ÀÇ memberId °ªÀÌ °°Àº °æ¿ì true ¹ÝÈ¯(¸®ÅÏ)
+			// ï¿½ï¿½ï¿½Þµï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ memberId ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ true ï¿½ï¿½È¯(ï¿½ï¿½ï¿½ï¿½)
 			if(this.memberId == ((Member)obj).getMemberId()) {
 				return true;	
 			}
 		}
-		// Àü´ÞµÈ °´Ã¼¿Í ÇöÀç °´Ã¼ÀÇ memberId °ªÀÌ ´Ù¸£°Å³ª,
-		// 	Àü´ÞµÈ °´Ã¼°¡ Member Å¸ÀÔÀÌ ¾Æ´Ñ °æ¿ì false ¹ÝÈº(¸®ÅÏ)
+		// ï¿½ï¿½ï¿½Þµï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ memberId ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ï¿½Å³ï¿½,
+		// 	ï¿½ï¿½ï¿½Þµï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ Member Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ false ï¿½ï¿½Èº(ï¿½ï¿½ï¿½ï¿½)
 		return false;
 	}
 	

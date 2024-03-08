@@ -7,7 +7,7 @@ public class StringArray implements ArrayAction{
 	protected String[] arr = new String[10];
 	@Override
 	public void add(String element) {
-		System.out.print("(È¸¿øµî·Ï)È¸¿ø ¸í : ");
+		System.out.print("(È¸ï¿½ï¿½ï¿½ï¿½ï¿½)È¸ï¿½ï¿½ ï¿½ï¿½ : ");
 		element = sc.nextLine();
 		for(int idx=0;idx<arr.length;idx++) {
 			if (arr[idx] == null) {

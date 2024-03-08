@@ -11,15 +11,15 @@ public class Run {
 		
 		
 		Book[] bArr = new Book[3];
-		/* °´Ã¼¹è¿­À» ¼±¾ð ¹× ÇÒ´ç ÈÄ
+		/* ï¿½ï¿½Ã¼ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ò´ï¿½ ï¿½ï¿½
 		 	
 		 */
 		/*		
 		Book b1 = new Book();
-		Book b2 = new Book("ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö ÀÔ¹®", "ÀÌÁö½º ÆÛºí¸®½Ì", "ÀÛÀºÁ¾");
-		String title = "°´Ã¼ ÁöÇâÀÇ »ç½Ç°ú ¿ÀÇØ";
-		String publisher = "À§Å°ºÏ½º";
-		String author = "Á¶¿µÈ£";
+		Book b2 = new Book("ï¿½Ú¹ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½Ô¹ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ûºï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		String title = "ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°ï¿½ ï¿½ï¿½ï¿½ï¿½";
+		String publisher = "ï¿½ï¿½Å°ï¿½Ï½ï¿½";
+		String author = "ï¿½ï¿½ï¿½ï¿½È£";
 		int price = 20_000;	// 20,000
 		double discountRate = 10.0;
 		Book b3 = new Book(title, publisher, author, price, discountRate);

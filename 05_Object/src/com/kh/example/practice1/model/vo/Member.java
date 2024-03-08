@@ -1,30 +1,30 @@
 package com.kh.example.practice1.model.vo;
 
 public class Member {
-	// ÇÊµåºÎ : µ¥ÀÌÅÍ Á¤ÀÇ, º¯¼ö
-	private String memberId;	// ¾ÆÀÌµð
-	private String memberPwd;	// ºñ¹Ð¹øÈ£
-	private String memberName;	// ÀÌ¸§
-	private int age;			// ³ªÀÌ
-	private char gender;		// ¼ºº°
-	private String phone;		// ¿¬¶ôÃ³
-	private String email;		// ÀÌ¸ÞÀÏ
+	// ï¿½Êµï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½
+	private String memberId;	// ï¿½ï¿½ï¿½Ìµï¿½
+	private String memberPwd;	// ï¿½ï¿½Ð¹ï¿½È£
+	private String memberName;	// ï¿½Ì¸ï¿½
+	private int age;			// ï¿½ï¿½ï¿½ï¿½
+	private char gender;		// ï¿½ï¿½ï¿½ï¿½
+	private String phone;		// ï¿½ï¿½ï¿½ï¿½Ã³
+	private String email;		// ï¿½Ì¸ï¿½ï¿½ï¿½
 	
-	// »ý¼ºÀÚºä
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Member() {
 		
 	}
 	
-	// ¸Þ¼ÒµåºÎ : ±â´É Á¤ÀÇ
-	/* ¸Þ¼Òµå (2)
+	// ï¿½Þ¼Òµï¿½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	/* ï¿½Þ¼Òµï¿½ (2)
 	 * - changeName
 	 * - printName
 	 */
-	//	changeName : setName ÀÇ ¿ªÇÒ
+	//	changeName : setName ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public void changeName(String name) {
 		memberName = name;
 	}
-	// printName : ÀÌ¸§(memberName)ÀÇ °ª¿ï Ãâ·Â
+	// printName : ï¿½Ì¸ï¿½(memberName)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	public void printName() {
 		System.out.println(memberName);
 	}

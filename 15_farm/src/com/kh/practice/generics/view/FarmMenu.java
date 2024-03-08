@@ -10,15 +10,15 @@ public class FarmMenu {
 	private FarmController fc = new FarmController();
 
 	public void mainMenu() {
-		System.out.println("========== KH ¸¶Æ® ==========");
+		System.out.println("========== KH ï¿½ï¿½Æ® ==========");
 		
 		while (true) {
-			System.out.println("******* ¸ÞÀÎ ¸Þ´º *******");
-			System.out.println("1. Á÷¿ø¸Þ´º");
-			System.out.println("2. ¼Õ´Ô ¸Þ´º");
-			System.out.println("9. Á¾·á");
+			System.out.println("******* ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ *******");
+			System.out.println("1. ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½");
+			System.out.println("2. ï¿½Õ´ï¿½ ï¿½Þ´ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½");
 			
-			System.out.print("¸Þ´º ¹øÈ£ ¼±ÅÃ : ");
+			System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ : ");
 			int selMenu = sc.nextInt();
 			
 			switch (selMenu) {
@@ -29,23 +29,23 @@ public class FarmMenu {
 				customerMenu();
 				break;
 			case 9:
-				System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½");
 				return;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void adminMenu() {
 		while (true) {
-			System.out.println("******* Á÷¿ø ¸Þ´º *******");
-			System.out.println("1. »õ ³ó»ê¹° Ãß°¡");
-			System.out.println("2. Á¾·ù »èÁ¦");
-			System.out.println("3. ¼ö·® ¼öÁ¤");
-			System.out.println("4. ³ó»ê¹° ¸ñ·Ï");
-			System.out.println("9. ¸ÞÀÎÀ¸·Î µ¹¾Æ°¡±â");
-			System.out.print("¸Þ´º ¹øÈ£ ¼±ÅÃ : ");
+			System.out.println("******* ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ *******");
+			System.out.println("1. ï¿½ï¿½ ï¿½ï¿½ê¹° ï¿½ß°ï¿½");
+			System.out.println("2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("4. ï¿½ï¿½ê¹° ï¿½ï¿½ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½");
+			System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ : ");
 			
 			int selMenu = sc.nextInt();
 			switch (selMenu) {
@@ -64,19 +64,19 @@ public class FarmMenu {
 			case 9:
 				return;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void customerMenu() {
 		while (true) {
-			System.out.println("******* °í°´ ¸Þ´º *******");
-			System.out.println("1. ³ó»ê¹° »ç±â");
-			System.out.println("2. ³ó»ê¹° »©±â");
-			System.out.println("3. ±¸ÀÔÇÑ ³ó»ê¹° º¸±â");
-			System.out.println("9. ¸ÞÀÎÀ¸·Î µ¹¾Æ°¡±â");
-			System.out.print("¸Þ´º ¹øÈ£ ¼±ÅÃ : ");
+			System.out.println("******* ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ *******");
+			System.out.println("1. ï¿½ï¿½ê¹° ï¿½ï¿½ï¿½");
+			System.out.println("2. ï¿½ï¿½ê¹° ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ê¹° ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½");
+			System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
@@ -91,51 +91,51 @@ public class FarmMenu {
 			case 9:
 				return;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void addNewKind() {
 		while (true) {
-			System.out.print("1. °úÀÏ / 2.Ã¤¼Ò /3.°ß°ú : ");
-			System.out.print("Ãß°¡ÇÒ Á¾·ù ¹øÈ£ : ");
+			System.out.print("1. ï¿½ï¿½ï¿½ï¿½ / 2.Ã¤ï¿½ï¿½ /3.ï¿½ß°ï¿½ : ");
+			System.out.print("ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ : ");
 			int num = sc.nextInt();
-			System.out.print("ÀÌ¸§ : ");
+			System.out.print("ï¿½Ì¸ï¿½ : ");
 			Farm f = sc.next();
-			System.out.print("¼ö·® : ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 			int amount = sc.nextInt();
 			switch (num) {
 			case 1:
 				if(fc.addNewKind(f, amount)) {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡µÇ¾ú½À´Ï´Ù");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½");
 				} else {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡¿¡ ½ÇÆÐµÇ¾ú½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÐµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 				}
 				return;
 			case 2:
 				if(fc.addNewKind(f, amount)) {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡µÇ¾ú½À´Ï´Ù");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½");
 				} else {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡¿¡ ½ÇÆÐµÇ¾ú½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÐµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 				}
 				return;
 			case 3:
 				if(fc.addNewKind(f, amount)) {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡µÇ¾ú½À´Ï´Ù");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½");
 				} else {
-					System.out.println("»õ ³ó»ê¹°ÀÌ Ãß°¡¿¡ ½ÇÆÐµÇ¾ú½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+					System.out.println("ï¿½ï¿½ ï¿½ï¿½ê¹°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÐµÇ¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 				}
 				return;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void removeKind() {
 		while (true) {
-			System.out.print("1. °úÀÏ / 2.Ã¤¼Ò /3.°ß°ú : ");
+			System.out.print("1. ï¿½ï¿½ï¿½ï¿½ / 2.Ã¤ï¿½ï¿½ /3.ï¿½ß°ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
@@ -148,14 +148,14 @@ public class FarmMenu {
 				
 				break;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void changeAmount() {
 		while (true) {
-			System.out.println("1. °úÀÏ / 2.Ã¤¼Ò /3.°ß°ú : ");
+			System.out.println("1. ï¿½ï¿½ï¿½ï¿½ / 2.Ã¤ï¿½ï¿½ /3.ï¿½ß°ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
@@ -168,7 +168,7 @@ public class FarmMenu {
 				
 				break;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
@@ -179,7 +179,7 @@ public class FarmMenu {
 
 	public void buyFarm() {
 		while (true) {
-			System.out.print("1. °úÀÏ / 2.Ã¤¼Ò /3.°ß°ú : ");
+			System.out.print("1. ï¿½ï¿½ï¿½ï¿½ / 2.Ã¤ï¿½ï¿½ /3.ï¿½ß°ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
@@ -192,14 +192,14 @@ public class FarmMenu {
 				
 				break;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}
 
 	public void removeFarm() {
 		while (true) {
-			System.out.print("1. °úÀÏ / 2.Ã¤¼Ò /3.°ß°ú : ");
+			System.out.print("1. ï¿½ï¿½ï¿½ï¿½ / 2.Ã¤ï¿½ï¿½ /3.ï¿½ß°ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
@@ -212,7 +212,7 @@ public class FarmMenu {
 				
 				break;
 			default:
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 			}
 		}
 	}

@@ -4,17 +4,17 @@ import com.kh.example.practice1.model.vo.Member;
 
 public class Run {
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public static void main(String[] args) {
-		 // Member Å¬·¡½º ¼±¾ð ¹× ÀÎ½ºÅÏ½º ¼±¾ð
-		Member m = new Member(); // ±âº»»ý¼ºÀÚ: Å¬·¡½º¸í();
-		// changeName()À» ÀÌ¿ëÇá °ªÀ» º¯°æ
-		m.changeName("Áö¹Î¼®");
-		// printName()À» ÀÌ¿ëÇØ Ãâ·Â
+		 // Member Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		Member m = new Member(); // ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½();
+		// changeName()ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		m.changeName("ï¿½ï¿½ï¿½Î¼ï¿½");
+		// printName()ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		m.printName();
 		
 		Member m2 = new Member();
-		m2.changeName("È«±æµ¿");
+		m2.changeName("È«ï¿½æµ¿");
 		m2.printName();
 	}
 }

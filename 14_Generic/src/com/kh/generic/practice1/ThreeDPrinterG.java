@@ -1,10 +1,10 @@
 package com.kh.generic.practice1;
 
-// Á¦³×Æ½ Å¬·¡½º
-public class ThreeDPrinterG<T> {	// <T> : Å¸ÀÔ¸Å°³º¯¼ö
-		// ÇÊµå
-		//  ¾î¶² Å¬·¡½ºÀÇ Å¸ÀÔÀÌµç ÀÎ½ºÅÏ½º »ý¼º
-		private T material;		// T: Å¸ÀÔ¸Å°³º¯¼ö
+// ï¿½ï¿½ï¿½ï¿½Æ½ Å¬ï¿½ï¿½ï¿½ï¿½
+public class ThreeDPrinterG<T> {	// <T> : Å¸ï¿½Ô¸Å°ï¿½ï¿½ï¿½ï¿½ï¿½
+		// ï¿½Êµï¿½
+		//  ï¿½î¶² Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		private T material;		// T: Å¸ï¿½Ô¸Å°ï¿½ï¿½ï¿½ï¿½ï¿½
 
 		// getter/setter
 		public T getMaterial() {

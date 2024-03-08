@@ -4,7 +4,7 @@ import java.io.*;
 
 // DAO : Data Access Object
 public class FileDAO {
-	// ÇÊµå (º¯¼ö)
+	// ï¿½Êµï¿½ (ï¿½ï¿½ï¿½ï¿½)
 	// -reader:FileReader=null
 	// -writer:FileWriter=null
 	// -f:File=null
@@ -14,11 +14,11 @@ public class FileDAO {
 	private File f =null;
 	private int READ_SIZE=1024;
 	
-	// ±â´É (¸Þ¼Òµå)
-	// ÆÄÀÏ Á¢±Ù (acess(filepath:String) : void throws IOException)
-	//	type: 0 (ÀÔ·Â) 1 (Ãâ·Â)
+	// ï¿½ï¿½ï¿½ (ï¿½Þ¼Òµï¿½)
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (acess(filepath:String) : void throws IOException)
+	//	type: 0 (ï¿½Ô·ï¿½) 1 (ï¿½ï¿½ï¿½)
 	public void acess(String filepath, int type) throws IOException{
-		// ½ºÆ®¸² Å¬·¡½º¸¦ »ý¼º
+		// ï¿½ï¿½Æ®ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		if(type == 0 && reader == null) {
 			reader = new FileReader(filepath);
 		}
@@ -28,39 +28,39 @@ public class FileDAO {
 		}
 	}
 	
-	// ÆÄÀÏ ´Ý±â (close() : void)
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ý±ï¿½ (close() : void)
 	public void close(int type) throws IOException {
 		try {
-			// ÀÔ·Â ½ºÆ®¸² ´Ý±â
+			// ï¿½Ô·ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ý±ï¿½
 			if(type == 0 && reader != null) reader.close();
 		
-			// Ãâ·Â ½ºÆ®¸² ´Ý±â
+			// ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ý±ï¿½
 			if(type == 1 && writer != null) writer.close();
 		} catch (IOException e) {
 			
 		}
 	}
 	
-	// ÆÄÀÏ ÀÐ±â (read():StringBulider)
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ð±ï¿½ (read():StringBulider)
 	public String read() {
-		// ¹ÝÈ¯ Å¸ÀÔÀº String, ³»ºÎÀûÀ¸·Î StringBuilder¸¦ »ç¿ë
+		// ï¿½ï¿½È¯ Å¸ï¿½ï¿½ï¿½ï¿½ String, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ StringBuilderï¿½ï¿½ ï¿½ï¿½ï¿½
 		StringBuilder sb = new StringBuilder();
 		if (reader != null) {
 			char[] buffer = new char[READ_SIZE];
 			int length;
 			try {
 				while((length = reader.read(buffer)) != -1) {
-//					sd.append(buffer);	// char[] Å¸ÀÔÀÇ µ¥ÀÌÅÍ·Î ¹®ÀÚ¿­ º¯°æ(ÇÕÄ¡±â)
+//					sd.append(buffer);	// char[] Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Ä¡ï¿½ï¿½)
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();		// ¿¹¿Ü ¹ß»ý ½Ã ¿À·ù ³»¿ë Ãâ·Â
+				e.printStackTrace();		// ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 			}
 		}
 		
 		return sb.toString();
 	}
-	// ÆÄÀÏ ¾²±â (write(data:String) : boolean)
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (write(data:String) : boolean)
 	public boolean write(String data) {
 		System.out.println(data);
 		if (writer != null) {
@@ -74,19 +74,19 @@ public class FileDAO {
 			
 			return true;
 		} else {
-			// ½ºÆ®¸²ÀÌ ´ÝÇôÀÖ´Â °æ¿ì
+			// ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
 			return false;
 		}
 	}
 	
-	// ÆÄÀÏ Á¸Àç À¯¹« È®ÀÎ (isExistFile(filpath:String):boolean
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ (isExistFile(filpath:String):boolean
 	public boolean isExisrFile(String filepath) {
-		// ÆÄÀÏÀÇ Á¤º¸(ÆÄÀÏ¸í/¸¶Áö¸·¼öÁ¤½Ã°£/À§Ä¡) È®ÀÎÇÒ ‹š »ç¿ë Å¬·¡½º: File
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ï¸ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½/ï¿½ï¿½Ä¡) È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½: File
 		f = new File(filepath);
-		return f.exists();		// exists() : ÆÄÀÏÀÌ Á¸ÀçÇÏ´Â Áö È®ÀÎÇÏ´Â ¸Þ¼Òµå
+		return f.exists();		// exists() : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 	}
 	
-	// °æ·ÎÀÇ ÆÄÀÏ °³¼ö Á¶È¸ (getfilesCount(filepath:String) : int)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ (getfilesCount(filepath:String) : int)
 	public int getFilesCount(String filepath) {
 		f = new File(filepath);
 //		FilenameFilter ff = new FilenameFilter();

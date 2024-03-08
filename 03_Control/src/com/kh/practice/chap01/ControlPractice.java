@@ -4,202 +4,202 @@ import java.util.Scanner;
 
 public class ControlPractice {
 	/*
-	 * ½Ç½À ¹®Á¦ 1)
-	 * ¾Æ·¡ ¿¹½Ã¿Í °°ÀÌ ¸Þ´º¸¦ Ãâ·ÂÇÏ°í ¸Þ´º ¹øÈ£¸¦ ´©¸£¸é "OO¸Þ´ºÀÔ´Ï´Ù"¸¦ Ãâ·ÂÇÏ°í,
-	 * Á¾·á ¹øÈ£¸¦ ´©¸£¸é "ÇÁ·Î±×·¥ÀÌ Á¾·áµË´Ï´Ù."¸¦ Ãâ·ÂÇÏ¼¼¿ä.
+	 * ï¿½Ç½ï¿½ ï¿½ï¿½ï¿½ï¿½ 1)
+	 * ï¿½Æ·ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "OOï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½"ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½,
+	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½."ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.
 	 * 
  	  	ex.
- 		1. ÀÔ·Â
- 		2. ¼öÁ¤
- 		3. Á¶È¸
- 		4. »èÁ¦
- 		7. Á¾·á
- 		¸Þ´º¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä 3
- 		Á¶È¸ ¸Þ´ºÀÔ´Ï´Ù
+ 		1. ï¿½Ô·ï¿½
+ 		2. ï¿½ï¿½ï¿½ï¿½
+ 		3. ï¿½ï¿½È¸
+ 		4. ï¿½ï¿½ï¿½ï¿½
+ 		7. ï¿½ï¿½ï¿½ï¿½
+ 		ï¿½Þ´ï¿½ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ 3
+ 		ï¿½ï¿½È¸ ï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½
 	 */
 	public void practice1() {
-		// Ctrl + spacs ´ÜÃàÅ° : ÀÚµ¿À¸·Î import »ý¼º
+		// Ctrl + spacs ï¿½ï¿½ï¿½ï¿½Å° : ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ import ï¿½ï¿½ï¿½ï¿½
 		Scanner sc = new Scanner(System.in);
-		// ¸Þ´º¸¦ È­¸é¿¡ Ãâ·Â
-		System.out.println("1. ÀÔ·Â");
-		System.out.println("2. ¼öÁ¤");
-		System.out.println("3. Á¶È¸");
-		System.out.println("4. »èÁ¦");
-		System.out.println("7. Á¾·á");
-		// "¸Þ´º¸¦ ÀÔ·ÂÇÏ¼¼¿ä : " È­¸é¿¡ Ãâ·ÂÇÏ°í, »ç¿ëÀÚ·ÎºÎÅÍ ¸Þ´º ¹øÈ£ ÀÔ·Â ¹Þ±â
-		System.out.print("¸Þ´º¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		// ï¿½Þ´ï¿½ï¿½ï¿½ È­ï¿½é¿¡ ï¿½ï¿½ï¿½
+		System.out.println("1. ï¿½Ô·ï¿½");
+		System.out.println("2. ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("3. ï¿½ï¿½È¸");
+		System.out.println("4. ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("7. ï¿½ï¿½ï¿½ï¿½");
+		// "ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : " È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½, ï¿½ï¿½ï¿½ï¿½Ú·Îºï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ ï¿½Þ±ï¿½
+		System.out.print("ï¿½Þ´ï¿½ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 		int selMenu = sc.nextInt();
 		switch(selMenu) {
 		case 1:
-			System.out.println("ÀÔ·Â ¸Þ´ºÀÔ´Ï´Ù");
+			System.out.println("ï¿½Ô·ï¿½ ï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 2:
-			System.out.println("¼öÁ¤ ¸Þ´ºÀÔ´Ï´Ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 3:
-			System.out.println("Á¶È¸ ¸Þ´ºÀÔ´Ï´Ù");
+			System.out.println("ï¿½ï¿½È¸ ï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 4:
-			System.out.println("»èÁ¦ ¸Þ´ºÀÔ´Ï´Ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 7:
-			System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			break;
 		default:
-			System.out.println("ÇØ´ç ¸Þ´º´Â ¾÷½À´Ï´Ù.");
+			System.out.println("ï¿½Ø´ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 	public void practice2() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¼ýÀÚ¸¦ ÇÑ °³ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 		int num = sc.nextInt();
 		if(num%2 == 0) {
-			System.out.println("Â¦¼ö´Ù");
+			System.out.println("Â¦ï¿½ï¿½ï¿½ï¿½");
 		} else if(num%2 == 1) {
-			System.out.println("È¦¼ö´Ù");
+			System.out.println("È¦ï¿½ï¿½ï¿½ï¿½");
 		} else {
-			System.out.println("¾ç¼ö¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		}
 	}
 	public void practice3() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("±¹¾îÁ¡¼ö : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
 		int kor = sc.nextInt();
-		System.out.print("¼öÇÐÁ¡¼ö : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
 		int math = sc.nextInt();
-		System.out.print("¿µ¾îÁ¡¼ö : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ");
 		int eng = sc.nextInt();
 
 		int total = kor + math + eng;
 		double avg = total/3;
 		if(kor >= 40 && math >= 40 && eng >= 40 && avg >= 60) {
-			System.out.println("±¹¾î : " + kor);
-			System.out.println("¼öÇÐ : " + math);
-			System.out.println("¿µ¾î : " + eng);
-			System.out.println("ÇÕ°è : " + total);
-			System.out.println("Æò±Õ : " + avg);
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù, ÇÕ°ÝÀÔ´Ï´Ù!");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + math);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng);
+			System.out.println("ï¿½Õ°ï¿½ : " + total);
+			System.out.println("ï¿½ï¿½ï¿½ : " + avg);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½, ï¿½Õ°ï¿½ï¿½Ô´Ï´ï¿½!");
 		} else {
-			System.out.println("ºÒÇÕ°ÝÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Õ°ï¿½ï¿½Ô´Ï´ï¿½.");
 		}	
 	}
 	public void practice4() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("1~12 »çÀÌÀÇ Á¤¼ö ÀÔ·Â : ");
+		System.out.print("1~12 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
 		int month = sc.nextInt();		
 		switch(month) {
 		case 1 :
-			System.out.println(month + "¿ùÀº °Ü¿ïÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¿ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 2 :
-			System.out.println(month + "¿ùÀº °Ü¿ïÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¿ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 3 :
-			System.out.println(month + "¿ùÀº º½ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 4 :
-			System.out.println(month + "¿ùÀº º½ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 5 :
-			System.out.println(month + "¿ùÀº º½ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 6 :
-			System.out.println(month + "¿ùÀº ¿©¸§ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 7 :
-			System.out.println(month + "¿ùÀº ¿©¸§ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 8 :
-			System.out.println(month + "¿ùÀº ¿©¸§ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 9 :
-			System.out.println(month + "¿ùÀº °¡À»ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 10 :
-			System.out.println(month + "¿ùÀº °¡À»ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 11 :
-			System.out.println(month + "¿ùÀº °¡À»ÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		case 12 :
-			System.out.println(month + "¿ùÀº °Ü¿ïÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¿ï¿½ï¿½Ô´Ï´ï¿½");
 			break;
 		default:
-			System.out.println(month + "¿ùÀº Àß¸ø ÀÔ·ÂµÈ ´ÞÀÔ´Ï´Ù");
+			System.out.println(month + "ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½");
 		}
 	}
 	public void practice5() {
-		// ¾ÆÀÌµð : user01, ºñ¹Ð¹øÈ£: 1234qwer!!
+		// ï¿½ï¿½ï¿½Ìµï¿½ : user01, ï¿½ï¿½Ð¹ï¿½È£: 1234qwer!!
 		String id = "user01";
 		String pw = "1234qwer!!";
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¾ÆÀÌµð : ");
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ : ");
 		String inputId = sc.nextLine();
-		System.out.print("ºñ¹Ð¹øÈ£ : ");
+		System.out.print("ï¿½ï¿½Ð¹ï¿½È£ : ");
 		String inputPw = sc.nextLine();
 		
-		// ·Î±×¸° ¼º°ø½Ã
-		if (inputId.equals(id) // equals: inputId °ª°ú id °ªÀÌ °°ÀºÁö
+		// ï¿½Î±×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		if (inputId.equals(id) // equals: inputId ï¿½ï¿½ï¿½ï¿½ id ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				&& inputPw.equals(pw)) {
-			// (+) ºñ¹Ð¹øÈ£ : ÃÖ¼Ò 6ÀÚ¸® ÀÌ»ó, ´ë¹®ÀÚ + ¼Ò¹®ÀÚ + Æ¯¼ö¹®ÀÚ
-			System.out.println("·Î±×ÀÎ ¼º°ø!");
+			// (+) ï¿½ï¿½Ð¹ï¿½È£ : ï¿½Ö¼ï¿½ 6ï¿½Ú¸ï¿½ ï¿½Ì»ï¿½, ï¿½ë¹®ï¿½ï¿½ + ï¿½Ò¹ï¿½ï¿½ï¿½ + Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			System.out.println("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!");
 		} else if (!inputId.equals(id)) {
 			// id: user01, inputId: qqqq | inputId.equals(id) => false
 			//						!(inputId.equals(id)) -> !false -> true
-			System.out.println("¾ÆÀÌµð°¡ Æ²·È½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Ìµï¿½ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.");
 		} else {
-			System.out.println("ºñ¹Ð¹øÈ£°¡ Æ²·È½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 	public void practice6() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("±ÇÇÑÀ» È®ÀÎÇÏ°íÀÚ ÇÏ´Â È¸¿ø µî±Þ : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ : ");
 		String Account = sc.nextLine();
 		switch(Account) {
-		case "°ü¸®ÀÚ":
-			System.out.println("È¸¿ø°ü¸®, °Ô½Ã±Û °ü¸®, °Ô½Ã±Û ÀÛ¼º, ´ñ±Û ÀÛ¼º, °³½Ã±Û Á¶È¸");
+		case "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½":
+			System.out.println("È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ô½Ã±ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Ô½Ã±ï¿½ ï¿½Û¼ï¿½, ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½, ï¿½ï¿½ï¿½Ã±ï¿½ ï¿½ï¿½È¸");
 			break;
-		case "È¸¿ø":
-			System.out.println("°Ô½Ã±Û ÀÛ¼º, ´ñ±Û ÀÛ¼º, °Ô½Ã±Û Á¶È¸");
+		case "È¸ï¿½ï¿½":
+			System.out.println("ï¿½Ô½Ã±ï¿½ ï¿½Û¼ï¿½, ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½, ï¿½Ô½Ã±ï¿½ ï¿½ï¿½È¸");
 			break;
-		case "ºñÈ¸¿ø":
-			System.out.println("°Ô½Ã±Û Á¶È¸");
+		case "ï¿½ï¿½È¸ï¿½ï¿½":
+			System.out.println("ï¿½Ô½Ã±ï¿½ ï¿½ï¿½È¸");
 			break;
 		default:
-			System.out.println("¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 	public void practice7() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Å°(m)¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.print("Å°(m)ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½ : ");
 		double m = sc.nextDouble();
-		System.out.print("¸ö¹«°Ô(kg)¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(kg)ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½ : ");
 		double kg = sc.nextDouble();
 		double BMI = kg / (m * m);
-		System.out.println("BMI Áö¼ö : " + BMI);
+		System.out.println("BMI ï¿½ï¿½ï¿½ï¿½ : " + BMI);
 		if(BMI < 18.5) {
-			System.out.println("ÀúÃ¼Áß");
+			System.out.println("ï¿½ï¿½Ã¼ï¿½ï¿½");
 		} else if (BMI >= 18.5 || BMI < 23) {
-			System.out.println("Á¤»óÃ¼Áß");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½");
 		} else if (BMI >= 23 || BMI < 25) {
-			System.out.println("°úÃ¼Áß");
+			System.out.println("ï¿½ï¿½Ã¼ï¿½ï¿½");
 		} else if (BMI >= 25 || BMI < 30) {
-			System.out.println("ºñ¸¸");
+			System.out.println("ï¿½ï¿½");
 		} else if (BMI >= 30) {
-			System.out.println("°íµµ ºñ¸¸");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½");
 		} else {
-			System.out.println("¿À·ù");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 	public void practice8() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÇÇ¿¬»êÀÚ1 ÀÔ·Â : ");
+		System.out.print("ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½1 ï¿½Ô·ï¿½ : ");
 		int num1 = sc.nextInt();
-		System.out.print("ÇÇ¿¬»êÀÚ2 ÀÔ·Â : ");
+		System.out.print("ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½2 ï¿½Ô·ï¿½ : ");
 		int num2 = sc.nextInt();
-		System.out.print("¿¬»êÀÚ¸¦ ÀÔ·Â(+,-,*,/,%) : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½(+,-,*,/,%) : ");
 		String sp = sc.next();
 		if(sp == "+") {
 			System.out.println(num1+" "+sp+" "+num2+" = "+(num1+num2));
@@ -212,7 +212,7 @@ public class ControlPractice {
 		} else if(sp == "%") {
 			System.out.println(num1+" "+sp+" "+num2+" = "+(num1%num2));
 		} else {
-			System.out.print("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.print("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½.ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			
 		}
 	}

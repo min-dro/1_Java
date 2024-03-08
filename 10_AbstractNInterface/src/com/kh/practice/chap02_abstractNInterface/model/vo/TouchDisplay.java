@@ -1,9 +1,9 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public interface TouchDisplay {
-	// »ó¼ö: ¾ø´Ù
+	// ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½
 	
-	// Ãß»ó¸Þ¼Òµå
-	//	- ÅÍÄ¡ ¹æ½Ä ±â´É
+	// ï¿½ß»ï¿½Þ¼Òµï¿½
+	//	- ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	public abstract String touch();
 }

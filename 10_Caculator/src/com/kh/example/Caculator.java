@@ -6,18 +6,18 @@ public class Caculator implements Calc {
 	public int add(int num1, int num2) {
 		return num1 + num2;
 	}
-	// •û±â ¿¬»ê ±â´É: substract
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: substract
 	@Override
 	public int substract(int num1, int num2) {
 		return num1 - num2;
 	}
-	// °öÇÏ±â ¿¬»ê ±â´É: times
+	// ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: times
 	@Override
 	public int times(int num1, int num2) {
 		return num1 * num2;
 	}
-	// ³ª´©±â ¿¬»ê ±â´É: divide
-	//		- µÎ¹øÂ° ¸Å°³º¯¼ö°¡ 0ÀÌ¸é ERROR ¹ÝÈ¯
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: divide
+	//		- ï¿½Î¹ï¿½Â° ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½Ì¸ï¿½ ERROR ï¿½ï¿½È¯
 	@Override
 	public int divide(int num1, int num2) {
 		if (num2 == 0) {

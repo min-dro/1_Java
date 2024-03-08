@@ -1,8 +1,8 @@
 package com.kh.model.vo;
 
 public class User {
-	private String nickName;		// ´Ð³×ÀÓ
-	private int score;				// Á¡¼ö
+	private String nickName;		// ï¿½Ð³ï¿½ï¿½ï¿½
+	private int score;				// ï¿½ï¿½ï¿½ï¿½
 	
 	public User(String nickname) {
 		this.nickName = nickname;

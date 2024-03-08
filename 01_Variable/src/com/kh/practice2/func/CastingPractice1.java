@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CastingPractice1 {
 	
 	/*
-	 * ½Ç½À¹®Á¦ 1) Å°º¸µå·Î ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â ¹Þ¾Æ ±× ¹®ÀÚÀÇ À¯´Ï ÄÚµå¸¦ Ãâ·ÂÇÏ¼¼¿ä.
-	 * ex. ¹®ÀÚ : A
+	 * ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ 1) Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Þ¾ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµå¸¦ ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.
+	 * ex. ï¿½ï¿½ï¿½ï¿½ : A
 	 * 		A unicode : 65
 	 */
 	public void Practice() {
-		// import ¾øÀÌ Scanner »ç¿ëÇÏ´Â ¹æ¹ý
+		// import ï¿½ï¿½ï¿½ï¿½ Scanner ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
 //		java.util.Scanner sc = new java.util.Scanner(System.in);
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		char ch = sc.next().charAt(0);
 		
 		System.out.println("");

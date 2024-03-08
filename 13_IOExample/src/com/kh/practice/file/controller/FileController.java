@@ -5,7 +5,7 @@ public class FileController {
 	private FileDAO fd = new FileDAO();
 	
 	public boolean checkName(String file) {
-		// FileDAO Å¸ÀÔÀÇ fd ÂüÁ¶º¯¼ö¸¦ »ç¿ëÇØ¼­ checkName()
+		// FileDAO Å¸ï¿½ï¿½ï¿½ï¿½ fd ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ checkName()
 		/****
 		 boolean result = fd.checkName(file);
 		 // ...
@@ -15,8 +15,8 @@ public class FileController {
 	}
 	
 	public void fileSave(String file, StringBuilder sb) {
-		fd.fileSave(file, sb.toString());	// StringBuilder Å¬·¡½ºÀÇ toString() ¿À¹ö¶óÀÌµå
-											//	* °ª ÀÚÃ¼¸¦ ¹®ÀÚ¿­·Î ¹ÝÈ¯
+		fd.fileSave(file, sb.toString());	// StringBuilder Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ toString() ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
+											//	* ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	}
 	
 	public StringBuilder fileOpen(String file) {

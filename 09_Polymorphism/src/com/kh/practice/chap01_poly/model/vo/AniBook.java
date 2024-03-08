@@ -1,12 +1,12 @@
 package com.kh.practice.chap01_poly.model.vo;
 
-// Book Å¬·¡½º¸¦ »ó¼Ó¹ÞÀ½
+// Book Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½
 public class AniBook extends Book {
-	// ¸É¹ö º¯¼ö: (3)
-	private int accessAge;		// Á¦ÇÑ ³ªÀÌ
+	// ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½: (3)
+	private int accessAge;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	// »ý¼ºÀÚ: (0) + (2) = (2)
-	// - ±âº» »ý¼ºÀÚ, ¸Å°³º¯¼ö°¡ 4°³ÀÎ »ý¼ºÀÚ(title, author, publisher, accessAge)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: (0) + (2) = (2)
+	// - ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(title, author, publisher, accessAge)
 	public AniBook() {}
 	
 	public AniBook(String title, String author, String publisher, int accessAge) {
@@ -14,8 +14,8 @@ public class AniBook extends Book {
 		this.accessAge = accessAge;
 	}
 	
-	// ¸Þ¼Òµå: (1) - toString() ¸Þ¼Òµå ¿À¹ö¶óÀÌµù
-	//				ºÎ¸ðÅ¬·¡½ºÀÇ ¸É¹öº¯¼ö Á¤º¸¿Í ÇöÀçÅ¬·¡½º(AniBook)ÀÇ ¸É¹öº¯¼ö Á¤º¸¸¦ ¸ðµÎ ¹®ÀÚ¿­ ¹ÝÈ¯
+	// ï¿½Þ¼Òµï¿½: (1) - toString() ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
+	//				ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½(AniBook)ï¿½ï¿½ ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½È¯
 	@Override
 	public String toString() {
 		return String.format("%s, accessAge=%d", super.toString(),accessAge);

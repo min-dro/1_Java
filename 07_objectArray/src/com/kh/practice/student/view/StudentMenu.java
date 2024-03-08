@@ -4,28 +4,28 @@ import com.kh.practice.student.controller.StudentController;
 import com.kh.practice.student.model.vo.Student;
 
 public class StudentMenu {
-	// ÇÊµåºä
+	// ï¿½Êµï¿½ï¿½
 	private StudentController ssm = new StudentController();
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public StudentMenu() {
-		System.out.println("========== ÇÐ»ý Á¤º¸ Ãâ·Â =========");
-		// StudentController¿¡ printStudent()ÀÇ ¹ÝÈ¯ °ªÀ» ÅëÇØ ÇÐ»ý Á¤º¸ Ãâ·Â
+		System.out.println("========== ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ =========");
+		// StudentControllerï¿½ï¿½ printStudent()ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		Student[] sArr = ssm.printStudent();
-		//	for(ÀÚ·áÇü º¯¼ö¸í : ¹è¿­Çü)
+		//	for(ï¿½Ú·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½è¿­ï¿½ï¿½)
 		for(Student student : sArr) {
 			System.out.println(student.inform());
 		}
-		System.out.println("========== ÇÐ»ý ¼ºÀû Ãâ·Â =========");
-		// StudentController¿¡ avgScore()¸¦ ÅëÇØ Á¡¼ö ÇÕ°è¿Í Æò±Õ Ãâ·Â
+		System.out.println("========== ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ =========");
+		// StudentControllerï¿½ï¿½ avgScore()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ°ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		double[] scores = ssm.avgScore();
-		System.out.println("ÇÐ»ý Á¡¼ö ÇÕ°è : " + (int)scores[0]);
-		System.out.println("ÇÐ»ý Á¡¼ö Æò±Õ : " + scores[1]);
+		System.out.println("ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Õ°ï¿½ : " + (int)scores[0]);
+		System.out.println("ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : " + scores[1]);
 		
-		System.out.println("========== ÇÐ»ý °á°ú Ãâ·Â =========");
-		// ÇÐ»ýÀÇ Á¡¼ö°¡ CUT_LINE ¹Ì¸¸ÀÌ¸é Àç½ÃÇè ´ë»ó, ÀÌ»óÀÌ¸é Åë°ú Ãâ·Â
+		System.out.println("========== ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ =========");
+		// ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ CUT_LINE ï¿½Ì¸ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½, ï¿½Ì»ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		for(Student student : sArr) {
-			System.out.printf("%sÇÐ»ýÀº %sÀÔ´Ï´Ù.\n", student.getName(),(student.getScore() < StudentController.CUT_LINE ? "Åë°ú" : "Àç½ÃÇè ´ë»ó"));
+			System.out.printf("%sï¿½Ð»ï¿½ï¿½ï¿½ %sï¿½Ô´Ï´ï¿½.\n", student.getName(),(student.getScore() < StudentController.CUT_LINE ? "ï¿½ï¿½ï¿½" : "ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½"));
 		}
 	}
 	

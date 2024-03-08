@@ -10,13 +10,13 @@ public class DisplayMenu {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("======Console Game======");
 			System.out.println("1. Up & Down");
-			System.out.println("2. °¡À§¹ÙÀ§º¸");
-			System.out.println("3. ¼ýÀÚ ¾ß±¸");
-			System.out.println("9. Á¡¼öÁ¶È¸");
-			System.out.println("0. °ÔÀÓ Á¾·á");
+			System.out.println("2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½");
+			System.out.println("9. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸");
+			System.out.println("0. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 			System.out.println("========================");
 		
-			System.out.print("°ÔÀÓ ¼±ÅÃ: ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ");
 			int sel = sc.nextInt();
 			
 			switch(sel) {
@@ -33,7 +33,7 @@ public class DisplayMenu {
 				pc.getUserInfo();
 				break;
 			case 0:
-				System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 				return;
 			}
 		}

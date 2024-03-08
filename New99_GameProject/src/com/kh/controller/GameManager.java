@@ -15,13 +15,13 @@ public class GameManager {
 		do {
 		System.out.println("====== Console Game ======");
 		System.out.println("1. Up & Down");
-		System.out.println("2. °¡À§¹ÙÀ§º¸");
-		System.out.println("3. ¼ýÀÚ ¾ß±¸");
-		System.out.println("4. ==Ãß°¡ °ÔÀÓ °³¹ßÁß==");
-		System.out.println("9. Á¡¼ö Á¶È¸");
-		System.out.println("0. °ÔÀÓ Á¾·á");
+		System.out.println("2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ß±ï¿½");
+		System.out.println("4. ==ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½==");
+		System.out.println("9. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸");
+		System.out.println("0. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		System.out.println("======================");
-		System.out.print("°ÔÀÓ ¼±ÅÃ:");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½:");
 		num = sc.nextInt();
 		switch(num) {
 		case 1:
@@ -34,12 +34,12 @@ public class GameManager {
 			nb.start();
 			break;
 		case 4:
-			System.out.println("°³¹ßÁß ÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.");
 		case 9:
 			rs.result();
 			break;
 		case 0:
-			System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 			break;
 		default:
 			System.out.println("error");

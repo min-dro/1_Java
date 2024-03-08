@@ -3,24 +3,24 @@ package com.kh.practice.student.controller;
 import com.kh.practice.student.model.vo.Student;
 
 public class StudentController {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	// Ctrl + Space
 	private Student[] sArr = new Student[5];
 	public final static int CUT_LINE = 60;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public StudentController() {
 		// (1)
-		sArr[0] = new Student("±è±æµ¿", "ÀÚ¹Ù", 100);
-		sArr[1] = new Student("¹Ú±æµ¿", "µðºñ", 50);
-		sArr[2] = new Student("ÀÌ±æµ¿", "È­¸é", 85);
-		sArr[3] = new Student("Á¤±æµ¿", "¼­¹ö", 60);
-		sArr[4] = new Student("È«±æµ¿", "ÀÚ¹Ù", 20);
+		sArr[0] = new Student("ï¿½ï¿½æµ¿", "ï¿½Ú¹ï¿½", 100);
+		sArr[1] = new Student("ï¿½Ú±æµ¿", "ï¿½ï¿½ï¿½", 50);
+		sArr[2] = new Student("ï¿½Ì±æµ¿", "È­ï¿½ï¿½", 85);
+		sArr[3] = new Student("ï¿½ï¿½ï¿½æµ¿", "ï¿½ï¿½ï¿½ï¿½", 60);
+		sArr[4] = new Student("È«ï¿½æµ¿", "ï¿½Ú¹ï¿½", 20);
 		
 		// (2)
 		/*
-		String[] names = {"±è±æµ¿", "¹Ú±æµ¿", "ÀÌ±æµ¿", "Á¤±æµ¿", "È«±æµ¿"}
-		String[] subjects = {"ÀÚ¹Ù", "µðºñ", "È­¸é", "¼­¹ö", "ÀÚ¹Ù"};
+		String[] names = {"ï¿½ï¿½æµ¿", "ï¿½Ú±æµ¿", "ï¿½Ì±æµ¿", "ï¿½ï¿½ï¿½æµ¿", "È«ï¿½æµ¿"}
+		String[] subjects = {"ï¿½Ú¹ï¿½", "ï¿½ï¿½ï¿½", "È­ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½Ú¹ï¿½"};
 		int[] scores = {100, 50, 85, 60, 20};
 		for(int i=0; i<sArr.length; i++) {
 			sArr[i] = new Student(name[i], subject[i], score[i]);
@@ -28,7 +28,7 @@ public class StudentController {
 		 */
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public Student[] printStudent() {
 		return sArr;
 	}
@@ -43,8 +43,8 @@ public class StudentController {
 	
 	public double[] avgScore() {
 		// double[] d...
-		// d[0] = sumScore ÀÇ ¸®ÅÏ °ª
-		// d[1] = ÇÕÀÇ Æò±Õ... total/ÀüÃ¼°³¼ö..
+		// d[0] = sumScore ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+		// d[1] = ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½... total/ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½..
 		double score[] = new double[2];
 		score[0] = sumScore();
 		score[1] = sumScore()/sArr.length;

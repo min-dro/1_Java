@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class VariablePractice4 {
 	public void Practice() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
 		String str = sc.nextLine();
-		System.out.println("Ã¹ ¹øÂ° ¹®ÀÚ : " + str.charAt(0));
-		System.out.println("µÎ ¹øÂ° ¹®ÀÚ : " + str.charAt(1));
-		System.out.println("¼¼ ¹ø¤Š ¹®ÀÚ : " + str.charAt(2));
+		System.out.println("Ã¹ ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ : " + str.charAt(0));
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ : " + str.charAt(1));
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + str.charAt(2));
 	}
 }

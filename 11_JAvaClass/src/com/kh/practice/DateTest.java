@@ -9,44 +9,44 @@ import java.time.format.DateTimeFormatter;
 
 public class DateTest {
 	public static void main(String[] args) {
-		// Date Å¬·¡½º¸¦ »ç¿ëÇØ¼­ »ýÀÏ Á¤º¸¸¦ Ãâ·Â.
-		// - Date °´Ã¼ »ý¼º
+		// Date Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½.
+		// - Date ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 		/*
-		Date date = new Date(); // »ý¼ºÀÚ...
+		Date date = new Date(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...
 		date = new Date(2000, 01, 05);
 		System.out.println(date.getMonth() + "/" + date.getDate());
 		*/
-		// LocalDateTime Å¬·¡½º
-		//	 - ³â,¿ù,ÀÏ ÀÔ·ÂÇÏ¿© »ý¼º		: LocalDateTime.of(LocalDate.of(int year, int month, int dayOfMonth),
+		// LocalDateTime Å¬ï¿½ï¿½ï¿½ï¿½
+		//	 - ï¿½ï¿½,ï¿½ï¿½,ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½		: LocalDateTime.of(LocalDate.of(int year, int month, int dayOfMonth),
 		//												LocalTime.of(int hour, int minute))
-		//	 - ÇöÀç ³¯Â¥½Ã°£ ±âÁØÀ¸·Î »ý¼º: LocalDateTime.now()
+		//	 - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: LocalDateTime.now()
 		
-		// [ ³¯Â¥ Á¤º¸ Á¶È¸ ]
-		//	 - ¿ù(month) : º¯¼ö¸í.getMonthValue() // ¼ýÀÚ·Î ¹» Á¤º¸¸¦ ¹ÝÈ¯
-		//				   º¯¼ö¸í.getMonth()		// ¿µ¾î·Î ¿ù Á¤º¸¸¦ ¹ÝÈ¯
-		//	 - ÀÏ(day)	: º¯¼ö¸í.getDayOfMonth() // ¿ù ±âÁØ ÀÏ Á¤º¸ ¹ÝÈ¯ 
-		//				  º¯¼ö¸í.getDay
+		// [ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ ]
+		//	 - ï¿½ï¿½(month) : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.getMonthValue() // ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		//				   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.getMonth()		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		//	 - ï¿½ï¿½(day)	: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.getDayOfMonth() // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ 
+		//				  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.getDay
 		
 		LocalDateTime datetime = LocalDateTime.of(LocalDate.now(), LocalTime.now());
 		System.out.println(datetime.getMonth());
 		
 		System.out.println(datetime.getMonth() + "/" + datetime.getDayOfMonth());
-		// »ýÀÏ Ãâ·Â..
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½..
 		LocalDateTime birth = LocalDateTime.of(LocalDate.of(2000 ,1, 5), LocalTime.of(0, 0));
 		
 		// DateTimeFormatter
-		//	DateTimeFormatter.ofPattern(Æ÷¸Ë) : ³¯Â¥ Á¤º¸ÀÇ Æ÷¾Ü(Çü½Ä) Á¤ÀÇ
+		//	DateTimeFormatter.ofPattern(ï¿½ï¿½ï¿½ï¿½) : ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½
 		//	- YYYY-MM-DD hh:mm:ss
 		//	- YYYY/MM/DD hh:mm:ss
 		//	- import java.time.format.DateTimeFormatter;
 		System.out.println( birth.format(DateTimeFormatter.ofPattern("YYYY-MM-DD hh:mm:ss")) );
 		
 		
-		// ¿ÃÇØ ¸çÄ¥³²¾Ò´ÂÁö..
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¥ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½..
 		System.out.println(365 - datetime.getDayOfYear());
 		
-		// ¿À´Ã..  Åð±Ù±îÁö...
-		System.out.println(18 - datetime.getHour() + "½Ã°£ ³²¾Ò½À´Ï´Ù..");
+		// ï¿½ï¿½ï¿½ï¿½..  ï¿½ï¿½Ù±ï¿½ï¿½ï¿½...
+		System.out.println(18 - datetime.getHour() + "ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½Ò½ï¿½ï¿½Ï´ï¿½..");
 		
 	}
 }

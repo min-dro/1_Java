@@ -7,12 +7,12 @@ public class NumberBaseball extends Player {
 	Player user = new Player(); 
 	int cnt = user.getScore();
 	public void start() {
-		System.out.println("====== ¼ýÀÚ¾ß±¸ ======");
-		System.out.println(" µÎÀÚ¸® ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+		System.out.println("====== ï¿½ï¿½ï¿½Ú¾ß±ï¿½ ======");
+		System.out.println(" ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ ");
 		System.out.println("======================");
 		int random = (int)(Math.random() * 89 + 10);
 		for(int i=0;i<5;i++) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ï¿½Ô·ï¿½ : ");
 			int num = sc.nextInt();
 			if(random == num) {
 				System.out.println("***Strike!***");

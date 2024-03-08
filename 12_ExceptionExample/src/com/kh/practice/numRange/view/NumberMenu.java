@@ -5,23 +5,23 @@ import com.kh.practice.numRange.controller.NumberController;
 import com.kh.practice.numRange.exception.NumRangeException;
 
 public class NumberMenu {
-	// ¸Þ¼Òµå
+	// ï¿½Þ¼Òµï¿½
 	public void menu() {
 		Scanner sc = new Scanner(System.in);
 		NumberController nc = new NumberController();
 		
-		// Á¤¼ö 2°³ ÀÔ·Â ¹Þ±â
-		System.out.print("Á¤¼ö1 : ");		// ÄÜ¼úÃ¢¿¡ Ãâ·ÂÇÏ±â
-		int num1 = sc.nextInt();		// »ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·Â¹Þ±â
+		// ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Þ±ï¿½
+		System.out.print("ï¿½ï¿½ï¿½ï¿½1 : ");		// ï¿½Ü¼ï¿½Ã¢ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
+		int num1 = sc.nextInt();		// ï¿½ï¿½ï¿½ï¿½Ú·Îºï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ±ï¿½
 		
-		System.out.print("Á¤¼ö2 : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½2 : ");
 		int num2 = sc.nextInt();
 		try {
 			boolean result = nc.checkDouble(num1, num2);
-			System.out.printf("%dÀº(´Â) %dÀÇ ¹è¼öÀÎ°¡ ? %b\n", num1, num2, result);
+			System.out.printf("%dï¿½ï¿½(ï¿½ï¿½) %dï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Î°ï¿½ ? %b\n", num1, num2, result);
 		} catch(NumRangeException e) {
-			// printStackTrace() : ¿¹ÀÇ ¹ß»ý À§Ä¡¿Í È£ÃâµÈ ¸Þ¼Òµå Á¤º¸ Ãâ·Â
-			// 	* Throwable Å¬·¡½º·Î ºÎÅÍ »ó¼Ó¹ÞÀ½ (Throwable: Exception Å¬·¡½º »ó¼ÓÁß..)
+			// printStackTrace() : ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ È£ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+			// 	* Throwable Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½ (Throwable: Exception Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½..)
 			e.printStackTrace();
 		}
 	}

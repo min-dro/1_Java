@@ -8,22 +8,22 @@ import java.util.Scanner;
 import com.kh.practice.file.controller.FileController;
 
 public class FileMenu {
-	// ÇÊµå
+	// ï¿½Êµï¿½
 	private Scanner sc = new Scanner(System.in);
 	private FileController fc = new FileController();
 	
-	// ¸Þ¼Òµå
+	// ï¿½Þ¼Òµï¿½
 	public void mainMenu() {
-			while(true) {	// ¹«ÇÑ¹Ýº¹.. (´Ü, »ç¿ëÀÚ°¡ 9 ÀÔ·Â ½Ã ¸Þ¼Òµå Á¾·á)
+			while(true) {	// ï¿½ï¿½ï¿½Ñ¹Ýºï¿½.. (ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ 9 ï¿½Ô·ï¿½ ï¿½ï¿½ ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½)
 			System.out.println("***** My Note *****");
-			System.out.println("1. ³ëÆ® »õ·Î ¸¸µé±â");
-			System.out.println("2. ³ëÆ® ¿­±â");
-			System.out.println("3. ³ëÆ® ¿­¾î¼­ ¼öÁ¤ÇÏ±â");
-			System.out.println("9, ³¡³»±â");
-			System.out.print("¸Þ´º ¹øÈ£ : ");
+			System.out.println("1. ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("2. ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. ï¿½ï¿½Æ® ï¿½ï¿½ï¿½î¼­ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½");
+			System.out.println("9, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ : ");
 			
 			int select = sc.nextInt();
-			sc.nextLine();			// ¹Ù·Î ´ÙÀ½ ÀÔ·ÂÀÌ nextLine()¿ï »ç¿ëÇÏ¸ç, ¹öÆÛ¿¡ (\n)À» Áö¿öÁÖ±â À§ÇØ È£ÃâÇÔ
+			sc.nextLine();			// ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ nextLine()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½, ï¿½ï¿½ï¿½Û¿ï¿½ (\n)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½ï¿½
 			
 			switch(select) {
 			case 1:
@@ -34,12 +34,12 @@ public class FileMenu {
 				break;
 			case 3:
 				fileEdit();
-				break;		// switch¹® Á¾·á
+				break;		// switchï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			case 9:
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
-				return;		// ¸Þ¼Òµå Á¾·á
+				System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+				return;		// ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
 			default :
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");
 			}
 		}
 	}
@@ -48,26 +48,26 @@ public class FileMenu {
 		String fileName = null;
 		char choose = (Character) null;
 		while(true) {                                                   
-			System.out.println("ÆÄÀÏ¿¡ ÀúÀåÇÒ ³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
-			System.out.println("ex³¡it ÀÌ¶ó°í ÀÔ·ÂÇÏ¸é Á¾·áµË´Ï´Ù.");
-			System.out.print("³»¿ë : ");
+			System.out.println("ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+			System.out.println("exï¿½ï¿½it ï¿½Ì¶ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 			String contents = sc.nextLine(); 
 			sb.append(contents);
-			if (contents.equals("ex³¡it")){		// equals() : ¹®ÀÚ¿­ °ª ºñ±³
+			if (contents.equals("exï¿½ï¿½it")){		// equals() : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ ï¿½ï¿½
 				
 				while(true) {
-					System.out.print("ÀúÀåÇÒ ÆÄÀÏ ¸íÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä(ex. myfile.txt) : ");
+					System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½(ex. myfile.txt) : ");
 					fileName = sc.nextLine();
 					
 					if (fc.checkName(fileName) ){
-						System.out.print("ÀÌ¹Ì Á¸ÀçÇÏ´Â ÆÄÀÏÀÔ´Ï´Ù, µ¤¾î¾²½Ã°Ú½À´Ï±î?");
+						System.out.print("ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½, ï¿½ï¿½ï¿½î¾²ï¿½Ã°Ú½ï¿½ï¿½Ï±ï¿½?");
 						choose = sc.next().charAt(0);
 						if(choose == 'y' || choose == 'Y'){
-							fc.fileSave(fileName, sb);	// ¸Þ¼Òµå·Î ÆÄÀÏ¸í°ú StringBuilder ³Ñ±è
+							fc.fileSave(fileName, sb);	// ï¿½Þ¼Òµï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ StringBuilder ï¿½Ñ±ï¿½
 							break;				
 						}
 						/********
-						 // ¹®ÀÚ¸¦ ºñ±³¿¬»êÀÚ »ç¿ë
+						 // ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ñ±³¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						 char yn = sc.next().charAt(0);
 						 if( yn == 'y' || yn == 'Y'){}
 						 ********/
@@ -81,7 +81,7 @@ public class FileMenu {
 		}
 	}
 	public void fileOpen() {
-		System.out.println("¿­ ÆÄÀÏ ¸í : ");
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : ");
 		String fileName = sc.nextLine();
 		
 		if (fc.checkName(fileName)) {
@@ -94,23 +94,23 @@ public class FileMenu {
 		
 	}
 	public void fileEdit() {
-		System.out.print("¼öÁ¤ÇÒ ÆÄÀÏ ¸í : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : ");
 		String fileName = sc.nextLine();
 		
 		if(fc.checkName(fileName))
 		{
 			StringBuilder sb = new StringBuilder("");
 			while(true) {                                                   
-				System.out.println("ÆÄÀÏ¿¡ ÀúÀåÇÒ ³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
-				System.out.println("ex³¡it ÀÌ¶ó°í ÀÔ·ÂÇÏ¸é Á¾·áµË´Ï´Ù.");
-				System.out.print("³»¿ë : ");
+				System.out.println("ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
+				System.out.println("exï¿½ï¿½it ï¿½Ì¶ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.");
+				System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 				String contents = sc.nextLine(); 
 				sb.append(contents);
 				
-				if (contents.equals("ex³¡it")){		// equals() : ¹®ÀÚ¿­ °ª ºñ±³
+				if (contents.equals("exï¿½ï¿½it")){		// equals() : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ ï¿½ï¿½
 					
 					fc.fileEdit(fileName, sb);
-					break;			// ÆÄÀÏ ÀúÀå ÈÄ ¸Þ¼Òµå Á¾·á
+					break;			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½
 				}
 			}
 		}

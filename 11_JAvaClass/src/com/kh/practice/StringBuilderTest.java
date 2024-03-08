@@ -2,24 +2,24 @@ package com.kh.practice;
 
 public class StringBuilderTest {
 	public static void main(String[] args) {
-		// StringBuilder : ¹®ÀÚ¿­ °ªÀ» º¯°æÇÒ ¼ö ÀÖ¸§ (°°Àº ¸Þ¸ð¸® °ø°£¿¡¼­ °ªÀ» ¸é°æ
-		//				   ½º·¡µå safe º¸Àå ¾ÈµÊ. (´ÜÀÏ ½º·¹µå¿¡¼­ »ç¿ë)
+		// StringBuilder : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö¸ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//				   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ safe ï¿½ï¿½ï¿½ï¿½ ï¿½Èµï¿½. (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½å¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½)
 		
 		String str = "map";
 		
-		// StringBuilder °´Ã¼ »ý¼º ½Ã String Å¸ÀÔÀÇ º¯¼ö°¡ ÇÊ¿ä
+		// StringBuilder ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ String Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½
 		StringBuilder builder = new StringBuilder(str);
 		
 		int hash = System.identityHashCode(builder);
-		System.out.println("º¯°æ Àü builder : " + hash);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ builder : " + hash);
 		
-		// º¯¼ö¸í.append(°ª) : StringBuilder Å¸ÀÔÀÇ º¯¼ö¿¡ °ªÀ» º¯°æ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.append(ï¿½ï¿½) : StringBuilder Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		builder.append(" point");
 		builder.append(" tomato");
 		builder.append(" orange");
 		
 		System.out.println(builder.toString());
-		System.out.println("º¯°æ ÈÄ builder : " +
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ builder : " +
 							System.identityHashCode(builder));	
 	}
 }

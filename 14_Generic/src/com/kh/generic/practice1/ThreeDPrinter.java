@@ -1,9 +1,9 @@
 package com.kh.generic.practice1;
 
 public class ThreeDPrinter {
-	// ÇÊµå
-	//  ¾î¶² Å¬·¡½ºÀÇ Å¸ÀÔÀÌµç ÀÎ½ºÅÏ½º »ý¼º
-	private Object material;		// Object: ÃÖ»óÀ§ Å¬·¡½º.
+	// ï¿½Êµï¿½
+	//  ï¿½î¶² Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private Object material;		// Object: ï¿½Ö»ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½.
 
 	// getter/setter
 	public Object getMaterial() {

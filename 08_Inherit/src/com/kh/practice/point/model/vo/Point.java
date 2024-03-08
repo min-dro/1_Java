@@ -1,11 +1,11 @@
 package com.kh.practice.point.model.vo;
 
 public class Point {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	private int x;
 	private int y;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Point() {
 		
 	}
@@ -14,8 +14,8 @@ public class Point {
 		this.y = y;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
-	//	getter/setter : private º¯¼ö
+	// ï¿½Þ¼Òµï¿½ï¿½
+	//	getter/setter : private ï¿½ï¿½ï¿½ï¿½
 	public int getX() {
 		return x;
 	}

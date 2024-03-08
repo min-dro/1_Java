@@ -23,9 +23,9 @@ public class Main {
 			new Thread(new ServerSender()).start();
 			
 			while(true) {
-				System.out.println("¿¬°á ´ë±âÁß ...");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ...");
 				Socket s = ss.accept();
-				System.out.println(s.getInetAddress() + " ¿¬°áµÊ...");
+				System.out.println(s.getInetAddress() + " ï¿½ï¿½ï¿½ï¿½ï¿½...");
 				
 				new Thread(new ServerReader(s)).start();
 				bwList.add(new BufferedWriter(new OutputStreamWriter(s.getOutputStream(), "utf-8")));

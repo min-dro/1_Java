@@ -7,15 +7,15 @@ import java.io.IOException;
 
 // DAO : Data Access Object
 public class FileDAO {
-	// ¸Þ¼Òµå
+	// ï¿½Þ¼Òµï¿½
 	public boolean checkName(String file) {
-		// File Å¬·¡½º °´Ã¼, file ¸Å°³º¯¼ö·Î »ý¼ºÀÚ È£Ãâ
+		// File Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼, file ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 		File f = new File(file);
-		return f.exists(); 		// ÇØ´ç ÆÄÀÏÀÌ ÀÖ´ÂÁö(true) ¾ø´ÂÁö(false) È®ÀÎ
+		return f.exists(); 		// ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½(true) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(false) È®ï¿½ï¿½
 	}
 
 	public void fileSave(String file, String s) {
-		// ÆÄÀÏ Ãâ·Â °¡´É => ¹®ÀÚ ´ÜÀ§·Î Ãâ·Â. FileWriter »ç¿ë
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ => ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½. FileWriter ï¿½ï¿½ï¿½
 		FileWriter writer = null;
 		try {
 
@@ -36,14 +36,14 @@ public class FileDAO {
 	}
 
 	public StringBuilder fileOpen(String file) {
-		// ÆÄÀÏ ÀÔ·Â ±â´É => ÆÄÀÏ¿¡¼­ ÀÐ¾î¿À´Â ±â´É
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ => ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		StringBuilder sb = new StringBuilder();
 
 		try {
 			FileReader reader = new FileReader(file);
 
 			char[] buf = new char[1024];
-			while (reader.read(buf) != -1) { // read()ÀÇ °á°ú°¡ -1ÀÌ¸é ÆÄÀÏÀÇ ³¡±îÁö ÀÐÀº °Í.
+			while (reader.read(buf) != -1) { // read()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ -1ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½.
 				sb.append(buf);
 			}
 			reader.close();
@@ -54,9 +54,9 @@ public class FileDAO {
 		return sb;
 	}
 	public void fileEdit(String file, String s) {
-		// ÆÄÀÏ Ãâ·Â. FileWriter.
-		// ÀÌ¾î¼­ ÀúÀåµÉ ¼ö ÀÖµµ·Ï => FileWriter(ÆÄÀÏ°æ·Î, true)
-		//	 * FileWriter(ÆÄÀÏ°æ·Î) : °°Àº ÆÄÀÏÀÌ ÀÖÀ» °æ¿ì µ¤¾î¾º¿ò.
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½. FileWriter.
+		// ï¿½Ì¾î¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Öµï¿½ï¿½ï¿½ => FileWriter(ï¿½ï¿½ï¿½Ï°ï¿½ï¿½, true)
+		//	 * FileWriter(ï¿½ï¿½ï¿½Ï°ï¿½ï¿½) : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î¾ºï¿½ï¿½.
 		try {
 			FileWriter writer = new FileWriter(file, true);
 			

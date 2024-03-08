@@ -1,7 +1,7 @@
 package com.kh.practice1.run;
 
 
-// import [¿¬°áÇÒ Å¬·¡½º¿¡ ¼±¾ðµÈ package].[Å¬·¡½º¸í];
+// import [ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ package].[Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½];
 import com.kh.practice1.func.*;
 public class Run {
 	// main method

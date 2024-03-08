@@ -24,7 +24,7 @@ public class Cat extends Animal {
 	
 	@Override
 	public void speak() {
-		System.out.println(super.toString() + location + "¿¡ ¼­½ÄÇÏ¸ç, »ö»óÀº" + color + "ÀÔ´Ï´Ù");
+		System.out.println(super.toString() + location + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + color + "ï¿½Ô´Ï´ï¿½");
 	}
 	
 	

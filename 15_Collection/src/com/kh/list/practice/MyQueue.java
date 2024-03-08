@@ -3,20 +3,20 @@ package com.kh.list.practice;
 import java.util.ArrayList;
 
 public class MyQueue {
-	// ÇÊµå
+	// ï¿½Êµï¿½
 	// -myQueue:ArrayList<String>=new ArrayList<String>();
 	private ArrayList<String> myQueue = new ArrayList<String>();
 
-	// ¸Þ¼Òµå
-	// +enQueue(data:String)void // µ¥ÀÌÅÍ Ãß°¡
+	// ï¿½Þ¼Òµï¿½
+	// +enQueue(data:String)void // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 	public void enQueue(String data) {
 		myQueue.add(data);
 	}
 
-	// +deQueue():String // µ¥ÀÌÅÍ Á¦°Å
+	// +deQueue():String // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public String deQueue() {
 		if (myQueue.isEmpty()) {
-			return "Å¥°¡ ºñ¾îÀÖ½À´Ï´Ù.";
+			return "Å¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ï´ï¿½.";
 		}
 		return myQueue.remove(0);
 	}

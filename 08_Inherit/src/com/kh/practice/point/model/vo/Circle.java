@@ -1,18 +1,18 @@
 package com.kh.practice.point.model.vo;
 
 public class Circle extends Point {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	private int radius;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Circle() {}
 	public Circle(int x, int y, int radius) {
-		// x ¿Í y °ªÀ» ¾î¶»°Ô ÃÊ±âÈ­? ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ »ç¿ëÇÏÀÚ.
-		super(x, y);			//ºÎ¸ðÅ¬·¡½ºÀÇ »ý¼ºÀÚ È£ÃâÇÏ¿© ÃÊ±âÈ­
+		// x ï¿½ï¿½ y ï¿½ï¿½ï¿½ï¿½ ï¿½î¶»ï¿½ï¿½ ï¿½Ê±ï¿½È­? ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+		super(x, y);			//ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ê±ï¿½È­
 		this.radius = radius;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public int getRadius() {
 		return radius;
 	}
@@ -22,8 +22,8 @@ public class Circle extends Point {
 	
 	@Override
 	public String toString() {
-		// ÇÊµå¿¡ ´ã±ä ¸Þ¼Òµå ¹ÝÈ¯ÇÏ´Â ¸Þ¼Òµå
-		//	ÇÊµå : (3) x, y, radius
+		// ï¿½Êµå¿¡ ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+		//	ï¿½Êµï¿½ : (3) x, y, radius
 		return super.toString() + "" + radius;
 	}
 }

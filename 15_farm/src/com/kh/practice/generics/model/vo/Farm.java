@@ -1,17 +1,17 @@
 package com.kh.practice.generics.model.vo;
 
 public class Farm {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	private String kind;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Farm() {}
 	
 	public Farm(String kind) {
 		this.kind = kind;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public String getKind() {
 		return kind;
 	}
@@ -26,7 +26,7 @@ public class Farm {
 	
 	@Override
 	public int hashCode() {
-		return kind.hashCode();		// ÇÊµå(kind)ÀÇ ÇØ½Ã°ª
+		return kind.hashCode();		// ï¿½Êµï¿½(kind)ï¿½ï¿½ ï¿½Ø½Ã°ï¿½
 	}
 	
 	// Alt + Shift + s / v

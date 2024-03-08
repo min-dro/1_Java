@@ -9,50 +9,50 @@ public class LibraryMenu {
 	LibraryController lc = new LibraryController();
 	
 	public void mainMenu() {
-		System.out.print("ÀÌ¸§ : ");
+		System.out.print("ï¿½Ì¸ï¿½ : ");
 		String name = sc.nextLine();
 		
-		System.out.print("³ªÀÌ : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		int age = sc.nextInt();
 		
-		System.out.print("¼ºº° : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		char gender= sc.next().charAt(0);
 		
 //		Member m - new Member(name, age, gender);
-		// LibraryController ÀÇ insertMember() ¸Þ¼Òµå
-		System.out.println("===== ¸Þ´º =====");
-		System.out.println("1. ¸¶ÀÌÆäÀÌÁö");
-		System.out.println("2. µµ¼­ ÀüÃ¼ Á¶È¸");
-		System.out.println("3. µµ¼­ ÀüÃ¼ Á¶È¸");
-		System.out.println("4. °Å»ç ");
-		System.out.println("5. µµ¼­ ÀüÃ¼ Á¶È¸");
+		// LibraryController ï¿½ï¿½ insertMember() ï¿½Þ¼Òµï¿½
+		System.out.println("===== ï¿½Þ´ï¿½ =====");
+		System.out.println("1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¸");
+		System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¸");
+		System.out.println("4. ï¿½Å»ï¿½ ");
+		System.out.println("5. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½È¸");
 //		public void selectAll();
-		// Librarycontroller Å¬·¡½ºÀÇ 
+		// Librarycontroller Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 //		Book[] bList = lc.selectAll();
 	}
 	public void selectAll() {
-		// selectAll ¸Þ¼Òµå È£Ãâ
+		// selectAll ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½
 	}
 	public void searchBook() {
 		
 	}
 	public void rentBook() {
 		
-		System.out.print("´ë¿©ÇÒ µµ¼­ ¹øÈ£ ¼±ÅÃ : ");
+		System.out.print("ï¿½ë¿©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ : ");
 		int index = sc.nextInt();
 		
-		// LibraryController Å¬·¡½ºÀÇ rentBook ¸Þ¼Òµå·Î ÀÎµ¦½º Á¤º¸¸¦ Àü´Þ
+		// LibraryController Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ rentBook ï¿½Þ¼Òµï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		int result = lc.rentBook(index);
 		
 		switch(result) {
 		case 0:
-			System.out.println("¼º°øÀûÀ¸·Î ´ë¿©µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë¿©ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			break;
 		case 1:
-			System.out.println("³ªÀÌ Á¦ÇÑÀ¸·Î ´ë¿© ºÒ°¡´ÉÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë¿© ï¿½Ò°ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			break;
 		case 2:
-			System.out.println("¼º°øÀûÀ¸·Î ´ë¿©µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ë¿©ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 }

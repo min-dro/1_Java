@@ -16,13 +16,13 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("»ç¿ëÀÚ ÀÌ¸§ : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ : ");
 		Main.name = "[" + sc.nextLine() + "] ";
 		
-		System.out.print("Á¢¼Ó ip : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ip : ");
 		String ip = sc.nextLine();
 		
-		System.out.print("Á¢¼Ó port : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ port : ");
 		String port_ = sc.nextLine();
 		int port = Integer.parseInt(port_);
 		
@@ -32,7 +32,7 @@ public class Main {
 			new Thread(new Sender(s)).start();
 			new Thread(new Reader(s)).start();
 			
-			System.out.println("===== Á¢¼Ó ¿Ï·á =====");
+			System.out.println("===== ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ =====");
 			
 		} catch (IOException e) {
 			e.printStackTrace();

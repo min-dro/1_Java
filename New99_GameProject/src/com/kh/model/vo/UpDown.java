@@ -9,10 +9,10 @@ public class UpDown extends Player {
 		int num = (int)(Math.random()*30 + 1);
 		int cnt = user.getScore();
 		System.out.println("===== Up & Down =====");
-		System.out.println("1 ~ 30 »çÀÌÀÇ ¼ıÀÚ ¬Ãß±â ");
+		System.out.println("1 ~ 30 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß±ï¿½ ");
 		System.out.println("=====================");
 		for(int i=0;i<3;i++) {
-			System.out.print("¹øÈ£ÀÔ·Â : ");
+			System.out.print("ï¿½ï¿½È£ï¿½Ô·ï¿½ : ");
 			int select = sc.nextInt();
 			if(select < num) {
 				System.out.println("*** Up! ***");

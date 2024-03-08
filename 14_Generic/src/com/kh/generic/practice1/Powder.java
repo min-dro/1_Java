@@ -1,20 +1,20 @@
 package com.kh.generic.practice1;
 
-// Material Å¬·¡½º »ó¼Ó
+// Material Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 public class Powder extends Material {
 	
-	// Material Ãß»óÅ¬·¡½º ³» Ãß»ó¸Þ¼Òµå ¿À¹ö¶óÀÌµù
+	// Material ï¿½ß»ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß»ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
 	@Override
 	public void doPrinting() {
 		// TODO Auto-generated method stub
-		System.out.println("Power Àç·á Ãâ·Â");
+		System.out.println("Power ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
 	}
 
-	// Object Å¬·¡½º ³» toString ¸Þ¼Òµå ¿À¹ö¶óÀÌµù
+	// Object Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ toString ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Àç·á : Powder";
+		return "ï¿½ï¿½ï¿½ : Powder";
 	}
 	
 }

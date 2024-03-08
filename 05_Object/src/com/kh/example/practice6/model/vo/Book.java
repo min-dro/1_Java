@@ -1,31 +1,31 @@
 package com.kh.example.practice6.model.vo;
 
 public class Book {
-	// ¸µµåºÎ (º¯¼ö : 5)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ : 5)
 	private String title;
 	private String publisher;
 	private String author;
 	private int price;
 	private double discountRate;
 	
-	// »ý¼ºÀÚºÎ (3) : ¿À¹ö·Îµù
-	// ±âº» »ý¼ºÀÚ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ (3) : ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½
+	// ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Book() {
 		
 	}
-	// ¸Å°³º¯¼ö 3°³¸¦ ¹Þ´Â »ý¼ºÀÚ
+	// ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Book(String title, String publisher, String author) {
-		// Àü´Þ¹ÞÀº °ªÀ¸·Î ÃÊ±âÈ­
+		// ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 		this.title = title;
 		this.publisher = publisher;
 		this.author = author;
 	}
-	// ¸Å°³º¯¼ö 5°³¸¦ ¹Þ´Â »ý¼ºÀÚ
+	// ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ 5ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Book(String title, String publisher, String author, int price, double discountRate) {
 //		this.title = title;
 //		this.publisher = publisher;
 //		this.author = author;
-		// this([¸Å°³º¯¼ö])
+		// this([ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½])
 		this(title, publisher, author);
 		this.price = price;
 		this.discountRate = discountRate;

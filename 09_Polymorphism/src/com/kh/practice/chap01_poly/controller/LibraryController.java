@@ -3,36 +3,36 @@ package com.kh.practice.chap01_poly.controller;
 import com.kh.practice.chap01_poly.model.vo.*;
 
 public class LibraryController {
-	private Member mem = null;	// null·Î ¸í½Ã ÃÊ±âÈ­
-	private Book[] bList = new Book[5]; // Å©±â 5 ÇÒ´ç
+	private Member mem = null;	// nullï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+	private Book[] bList = new Book[5]; // Å©ï¿½ï¿½ 5 ï¿½Ò´ï¿½
 	
-	// ÃÊ±âÈ­ ºí·Ï. book °´Ã¼ ¹è¿­¿¡ 5°³ÀÇ °´Ã¼ µ¥ÀÌÅÍ¸¦ ÃÊ±âÈ­
+	// ï¿½Ê±ï¿½È­ ï¿½ï¿½ï¿½ï¿½. book ï¿½ï¿½Ã¼ ï¿½è¿­ï¿½ï¿½ 5ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ê±ï¿½È­
 	{
-		bList[0] = new CookBook("¹éÁ¾¿øÀÇ Áý¹ä", "¹éÁ¾¿ø", "tvN", true);
-		bList[1] = new AniBook("ÇÑ¹ø ´õ ÇØ¿ä", "¹ÌÆ¼", "¿ø¸ð¾î", 19);
-		bList[2] = new AniBook("·çÇÇÀÇ ¿øÇÇ½º", "·çÇÇ", "japan", 12);
-		bList[3] = new CookBook("ÀÌÇýÁ¤ÀÇ ¾ó¸¶³ª ¸ÀÀÖ°Ô¿ä", "ÀÌÇýÁ¤", "¹®ÇÐ", false);
-		bList[4] = new CookBook("ÃÖÇö ¼® ³¯ µû¶óÇØºÁ", "ÃÖÇö¼®", "¼Ò±ÝÀè", true);
+		bList[0] = new CookBook("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "tvN", true);
+		bList[1] = new AniBook("ï¿½Ñ¹ï¿½ ï¿½ï¿½ ï¿½Ø¿ï¿½", "ï¿½ï¿½Æ¼", "ï¿½ï¿½ï¿½ï¿½ï¿½", 19);
+		bList[2] = new AniBook("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "japan", 12);
+		bList[3] = new CookBook("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ó¸¶³ï¿½ ï¿½ï¿½ï¿½Ö°Ô¿ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", false);
+		bList[4] = new CookBook("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½Ò±ï¿½ï¿½ï¿½", true);
 	}
 	
-	// Controller ºÎºÐÀº »ý¼ºÀÚ¸¦ ´Ù·Î Á¤ÀÇÇÏÁö ¾ÊÀ½
-	//	=> ±âº» »ý¼ºÀÚ¸¸ »ç¿ëÇÏ¿© °´Ã¼¸¦ »ý¼º
+	// Controller ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	//	=> ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	// inserMenber => setter ¸Þ¼Òµå
+	// inserMenber => setter ï¿½Þ¼Òµï¿½
 	public void insertMember(Member mem) {
-		this.mem = mem;		// ÁÖ¼Ò°ªÀÌ º¹»çµÊ(´ëÀÔµÊ)
+		this.mem = mem;		// ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ôµï¿½)
 	}
-	// myInfo => getter ¸Þ¼Òµå
+	// myInfo => getter ï¿½Þ¼Òµï¿½
 	public Member myInfo() {
-		return mem;		// ÂüÁ¶º¯¼ö(mem)´Â ÁÖ¼Ò°ªÀ» ÀúÀå
+		return mem;		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(mem)ï¿½ï¿½ ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 	
-	// selectAll => bList º¯¼öÀÇ getter ¸Þ¼Òµå
+	// selectAll => bList ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ getter ï¿½Þ¼Òµï¿½
 	public Book[] selectAll() {
-		return bList;	// ÂüÁ¶º¯¼ö(bList)
+		return bList;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(bList)
 	}
 	
-	// Å°¿öµå¸¦ ÀÔ·Â ¹Þ¾Æ Å°¿öµå°¡ Æ÷ÇÔµÈ µµ¼­ ¸ñ·ÏÀ» ¹ÝÈ¯
+	// Å°ï¿½ï¿½ï¿½å¸¦ ï¿½Ô·ï¿½ ï¿½Þ¾ï¿½ Å°ï¿½ï¿½ï¿½å°¡ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	public Book[] searchBook(String keyword) {
 		return null;
 	}
@@ -41,40 +41,40 @@ public class LibraryController {
 	public int rentBook(int index) {
 		int result = 0;
 		
-		// index: °´Ã¼(Book) ¹è¿­¿¡¼­ »ç¿ëÇÒ À§Ä¡ °ª.
-		//	bList (µµ¼­¸ñ·Ï)¿¡¼­ ¸¸È­Ã¥(AniBook)ÀÎ°æ¿ì
+		// index: ï¿½ï¿½Ã¼(Book) ï¿½è¿­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½.
+		//	bList (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­Ã¥(AniBook)ï¿½Î°ï¿½ï¿½
 		if(bList[index] instanceof AniBook) {
-			if (mem != null) {	// È¸¿øÁ¤º¸°¡ ÀÖ´Ù¸é,,
+			if (mem != null) {	// È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½,,
 				// bList[index] =>	Book b; => (AniBook)b
 				int accessAge = ((AniBook)bList[index]).getAccessAge();
-				//		È¸¿ø ³ªÀÌ¿Í ¸¸È­Ã¥ÀÇ Á¦ÇÑ³ªÀÌ¸¦ ºñ±³
+				//		È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¿ï¿½ ï¿½ï¿½È­Ã¥ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ³ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½
 				if(mem.getAge() < accessAge) {
-					//		È¸¿ø ³ªÀÌ < ¸¸È­Ã¥ÀÇ Á¦ÇÑ³ªÀÌ : result = 1
+					//		È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ < ï¿½ï¿½È­Ã¥ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ³ï¿½ï¿½ï¿½ : result = 1
 					result = 1;
 				}
 			}
 		} else if(bList[index] instanceof CookBook) {
-			// bList (µµ¼­¸ñ·Ï)¿¡¼­ ¿ä¸®Ã¥ÀÎ °æ¿ì
+			// bList (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ ï¿½ä¸®Ã¥ï¿½ï¿½ ï¿½ï¿½ï¿½
 			
-			//	   ÇØ´ç ¿ä¸®Ã¥ÀÇ ÄíÆùÀ¯¹«°¡ À¯(true)ÀÎ °æ¿ì
-			//	   => CookBook Å¬·¡½ºÀÇ isCoupon() ¸Þ¼Ò±×¸¦ ÅëÇØ È®ÀÎ!
-			//			µµ¼­ ¸ñ·Ï(bList)¿¡¼­ index À§Ä¡ÀÇ Ã¥ÀÌ ¿ä¸®Ã¥(CookBook)
+			//	   ï¿½Ø´ï¿½ ï¿½ä¸®Ã¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½(true)ï¿½ï¿½ ï¿½ï¿½ï¿½
+			//	   => CookBook Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ isCoupon() ï¿½Þ¼Ò±×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½!
+			//			ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(bList)ï¿½ï¿½ï¿½ï¿½ index ï¿½ï¿½Ä¡ï¿½ï¿½ Ã¥ï¿½ï¿½ ï¿½ä¸®Ã¥(CookBook)
 			if(((CookBook)bList[index]).isCoupon()) {
-				//			- È¸¿øÀÇ couponCount °ª 1 Áõ°¡
+				//			- È¸ï¿½ï¿½ï¿½ï¿½ couponCount ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½
 				//			- result = 2
 				if(mem != null) {
-					// ¸Þ¼Òµå¸¦ Â¥·Î Ãß°¡ÇÏ¿© ÀÛ¼º
+					// ï¿½Þ¼Òµå¸¦ Â¥ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï¿ï¿½ ï¿½Û¼ï¿½
 					mem.addCount();
 					
-					/* ½Ç½À¹®Á¦ ±âÁØÀ¸·Î ÀÛ¼º
+					/* ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
 				    int memCouponCount = mem.getCouponCount();
 					mem.setCouponCount(memCouponCount + 1);
 					 */
 					result = 2;
 				}
 			}
-		//	bList(µµ¼­¸ñ·Ï)¿¡¼­ ¿ä¸®Ã¥(CookBook)ÀÎ °æ¿ì
-		//		ÇØ´ç ¿ä¸®Ã¥ÀÇ ÄíÆùÀ¯¹«°¡
+		//	bList(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ ï¿½ä¸®Ã¥(CookBook)ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//		ï¿½Ø´ï¿½ ï¿½ä¸®Ã¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 		return result;
 	}

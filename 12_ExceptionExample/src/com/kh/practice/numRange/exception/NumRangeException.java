@@ -1,9 +1,9 @@
 package com.kh.practice.numRange.exception;
 
-// ¿¹¿ÜÅ¬·¡½º : <<exception>>
-//	[1] Exception Å¬·¡½º »ó¼Ó (ÇÊ¼ö)
-//			-> Exception: ÀÚ¹Ù¿¡¼­ Á¦°øÇÏ´Â ±âº» Å¬·¡½º
-//	[2] »ý¼ºÀÚ Á¤ÀÇ : ¸Å°³º¯¼ö  1°³(¹®ÀÚ¿­
+// ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ : <<exception>>
+//	[1] Exception Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (ï¿½Ê¼ï¿½)
+//			-> Exception: ï¿½Ú¹Ù¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½âº» Å¬ï¿½ï¿½ï¿½ï¿½
+//	[2] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½  1ï¿½ï¿½(ï¿½ï¿½ï¿½Ú¿ï¿½
 public class NumRangeException extends Exception {
 	public NumRangeException() {}
 	

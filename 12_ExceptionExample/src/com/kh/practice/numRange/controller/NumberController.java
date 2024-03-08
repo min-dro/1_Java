@@ -3,29 +3,29 @@ package com.kh.practice.numRange.controller;
 import com.kh.practice.numRange.exception.NumRangeException;
 
 public class NumberController {
-	// »ý¼ºÀÚ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public NumberController() {}
 	
-	// ¸Å¼Òµå
+	// ï¿½Å¼Òµï¿½
 	public boolean checkDouble(int num1, int num2)
 		throws NumRangeException{
 		
 		
-		// ¹üÀ§¿¡ ÇØ´çÇÏ´Â Á¶°Ç½Ä : ¸ðµç Á¶°Ç½ÄÀÌ true¿©¾ß Á¶°Ç½Ä °á°ú true
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ç½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ trueï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç½ï¿½ ï¿½ï¿½ï¿½ true
 		/*****
 		if ((1 <= num1 && num1 <= 100 ) && (1 <= num2 && num2 <= 100)) {
 			return num1 % num2 == 0;
 		}
 		
-		throw new NumRangeException("1ºÎÅÍ 100 »çÀÌÀÇ °ªÀÌ ¾Æ´Õ´Ï´Ù.")
+		throw new NumRangeException("1ï¿½ï¿½ï¿½ï¿½ 100 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½.")
 		*****/
-		// ¹üÀ§¸¦ ¹þ¾î³­ Á¶°Ç½Ä :: ÇÏ³ª¶óµµ true¸é Á¶°Ç½Ä °á°ú true
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³­ ï¿½ï¿½ï¿½Ç½ï¿½ :: ï¿½Ï³ï¿½ï¿½ï¿½ trueï¿½ï¿½ ï¿½ï¿½ï¿½Ç½ï¿½ ï¿½ï¿½ï¿½ true
 				if (num1 < 1 || num1 > 100 || num2 < 1 || num2 > 100) {
-					// ¿À·ù Àå»ý ½ÃÄÑ¾ßÇÔ!
-					throw new NumRangeException("1ºÎÅÍ 100 »çÀÌÀÇ °ªÀÌ ¾Æ´Õ´Ï´Ù.");
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½!
+					throw new NumRangeException("1ï¿½ï¿½ï¿½ï¿½ 100 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½.");
 				}
-		// num1ÀÌ num2ÀÇ ¹è¼öÀÎÁö  : ³ª¸ÓÁö ¿¬»êÀÚ(%)
-		// ¾Æ´Ï¸é ¹è¼ö°¡ ¾Æ´Ô.
+		// num1ï¿½ï¿½ num2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(%)
+		// ï¿½Æ´Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½.
 		//
 		
 		boolean result = (num1 % num2 == 0);

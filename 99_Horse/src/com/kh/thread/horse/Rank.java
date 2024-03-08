@@ -6,7 +6,7 @@ public class Rank{
 	public Rank() {}
 	public void finishLine(String name) {
 		if(Horse.count>0) {
-			System.out.println(name+"¸»ÀÇ µî¼ö´Â "+Horse.count+"µî ÀÔ´Ï´Ù!");
+			System.out.println(name+"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ "+Horse.count+"ï¿½ï¿½ ï¿½Ô´Ï´ï¿½!");
 			Horse.count++;
 		} 
 	}

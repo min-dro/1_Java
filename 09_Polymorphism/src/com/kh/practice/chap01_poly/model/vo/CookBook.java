@@ -1,10 +1,10 @@
 package com.kh.practice.chap01_poly.model.vo;
 
-// Book Å¬·¡½º »ó¼Ó ¹ÞÀ½
+// Book Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class CookBook extends Book {
-	private boolean coupon;		// ¿ä¸®ÇÐ¿ø ÄíÆùÀ¯¹«
+	private boolean coupon;		// ï¿½ä¸®ï¿½Ð¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	// »ý¼ºÀÚ (2) : ±âº»»ý¼ºÀÚ, ¸Å°³º¯¼ö 4°³(title, author, publisher, coupon) Àü´Þ¹ÞÀº »ý¼ºÀÚ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (2) : ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ 4ï¿½ï¿½(title, author, publisher, coupon) ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public CookBook() {}
 	
 	public CookBook(String title, String author, String publisher, boolean coupon) {
@@ -12,7 +12,7 @@ public class CookBook extends Book {
 		this.coupon = coupon;
 	}
 	
-	// ¸Þ¼Òµå (1) : toString() - ºÎ¸ðÅ¬·¡½º(Book) ÇÊµå¿Í ÇöÀç Å¬·¡½º(CookBook)ÀÇ ÇÊµå Á¤º¸¸¦ ¹®ÀÚ¿­ ¹ÝÈ¯
+	// ï¿½Þ¼Òµï¿½ (1) : toString() - ï¿½Î¸ï¿½Å¬ï¿½ï¿½ï¿½ï¿½(Book) ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½(CookBook)ï¿½ï¿½ ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½È¯
 	@Override
 	public String toString(){
 		return String.format("%s, coupon%b",super.toString(), coupon);

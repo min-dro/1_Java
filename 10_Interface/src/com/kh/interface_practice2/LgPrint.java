@@ -2,7 +2,7 @@ package com.kh.interface_practice2;
 
 import com.kh.interface_practice.Printable;
 
-// Printable ÀÎÅÍÆäÀÌ½º ±¸Çö(»ó¼Ó)
+// Printable ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½)
 public class LgPrint implements Printable{
 	@Override
 	public void colorPrint() {

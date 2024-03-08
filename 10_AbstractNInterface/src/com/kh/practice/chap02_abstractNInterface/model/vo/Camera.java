@@ -1,9 +1,9 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public interface Camera {
-	// »ó¼ö: ¾øÀ½
+	// ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½
 	
-	//	Ãß»ó¸Þ¼Òµå
-	//	- ÃÔ¿µ ¹æ½Ä ±â´É
+	//	ï¿½ß»ï¿½Þ¼Òµï¿½
+	//	- ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	public abstract String picture();
 }

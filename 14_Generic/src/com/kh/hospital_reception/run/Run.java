@@ -10,30 +10,30 @@ public class Run {
 		Scanner sc = new Scanner(System.in);
 		CustomArray ca = new CustomArray();
 		while (true) {
-			System.out.println("1.Ãß°¡");
-			System.out.println("2.»èÁ¦");
-			System.out.println("3. ¹øÈ£·Î ÀÌ¸§ Ã£±â");
-			System.out.println("4. ÀÌ¸§À¸·Î ¹øÈ£ Ã£±â");
-			System.out.println("5. Á¶È¸");
-			System.out.println("0. ³¡³»±â");
-			System.out.print("ÀÔ·Â : ");
+			System.out.println("1.ï¿½ß°ï¿½");
+			System.out.println("2.ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("3. ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ì¸ï¿½ Ã£ï¿½ï¿½");
+			System.out.println("4. ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ Ã£ï¿½ï¿½");
+			System.out.println("5. ï¿½ï¿½È¸");
+			System.out.println("0. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			System.out.print("ï¿½Ô·ï¿½ : ");
 			int num = sc.nextInt();
 			switch (num) {
 			case 1:
 				ca.add(null);
 				break;
 			case 2:
-				System.out.print("»èÁ¦ÇÒ ÀÌ¸§ ÀÔ·Â : ");
+				System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ : ");
 				String element = sc.next();
 				ca.remove(element);
 				break;
 			case 3:
-				System.out.print("¹øÈ£ ÀÔ·Â : ");
+				System.out.print("ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 				int idx = sc.nextInt();
 				System.out.println(ca.get(idx));
 				break;
 			case 4:
-				System.out.print("ÀÌ¸§ ÀÔ·Â : ");
+				System.out.print("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ : ");
 				element = sc.next();
 				System.out.println(ca.find(element));
 				break;

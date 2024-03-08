@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class VariablePractice3 {
 	public void Practice() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("°¡·Î : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		double a = sc.nextDouble();
-		System.out.print("¼¼·Î : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		double b = sc.nextDouble();
 		
 		System.out.println("");
-		System.out.println("¸éÀû : " + (a*b));
-		System.out.println("µÑ·¹ : " + 2*(a+b));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + (a*b));
+		System.out.println("ï¿½Ñ·ï¿½ : " + 2*(a+b));
 
 		
 	}

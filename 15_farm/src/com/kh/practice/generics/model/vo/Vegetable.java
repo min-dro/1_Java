@@ -20,7 +20,7 @@ public class Vegetable extends Farm{
 	
 	@Override
 	public int hashCode() {
-		return name.hashCode();		// ÇÊµå(kind)ÀÇ ÇØ½Ã°ª
+		return name.hashCode();		// ï¿½Êµï¿½(kind)ï¿½ï¿½ ï¿½Ø½Ã°ï¿½
 	}
 	
 	// Alt + Shift + s / v

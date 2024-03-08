@@ -1,14 +1,14 @@
 package com.kh.example;
 
-// °è»ê °ü·Ã ÀÎÅÍÆäÀÌ½º
+// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½
 public interface Calc {
-	// »ó¼ö
+	// ï¿½ï¿½ï¿½
 	// PI:double = 3.14
 	// ERROR:int = -999_999_999
 	public static final double PI = 3.14;
 	public static final int ERROR = -999_999_999;
 	
-	// Ãß»ó¸Þ¼Òµå
+	// ï¿½ß»ï¿½Þ¼Òµï¿½
 	// add(num1:int, num2:int) : int
 	public abstract int add(int num1, int num2);
 	// substract(num1:int, num2:int) : int

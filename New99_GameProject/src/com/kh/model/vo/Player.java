@@ -21,6 +21,6 @@ public class Player {
 		this.score = score;
 	}
 	public String toString() {
-		return String.format("»ç¿ëÀÚ %s´Ô Á¡¼ö´Â %dÁ¡ ÀÔ´Ï´Ù.", player, score);
+		return String.format("ï¿½ï¿½ï¿½ï¿½ï¿½ %sï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ %dï¿½ï¿½ ï¿½Ô´Ï´ï¿½.", player, score);
 	}
 }

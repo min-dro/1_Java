@@ -2,15 +2,15 @@ package com.kh.practice;
 
 public class WrapperTest {
 	
-		// Wrapper Class : ±âº»ÀÚ·áÇü °´Ã¼È­ÇÑ Å¬·¡½º
-		//	- ±âº»ÀÚ·áÇü : byte, short, int, long, float, double, char,boolean
+		// Wrapper Class : ï¿½âº»ï¿½Ú·ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼È­ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
+		//	- ï¿½âº»ï¿½Ú·ï¿½ï¿½ï¿½ : byte, short, int, long, float, double, char,boolean
 		// 	- Wrapper C: Byte, Short, Integer, long, Float, Double, Character,Booleam
 	
 		public static void main(String[] ages) {
 			
-			// ±âº»ÀÚ·áÇü °ª => ¹®ÀÚ¿­ °ª
-			//	ex) 1000 °ªÀ» ¹®ÀÚ¿­·Î º¯°æ (wrapper class »ç¿ë)
-			System.out.print(Integer.valueOf(1000).toString() + 10);		// ¹ÈÁö¿­·Î º¯°æµÈ 1000 °ª µÚ¿¡ 1ÃþÀÌ ´õÇØÁü
+			// ï¿½âº»ï¿½Ú·ï¿½ï¿½ï¿½ ï¿½ï¿½ => ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½
+			//	ex) 1000 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (wrapper class ï¿½ï¿½ï¿½)
+			System.out.print(Integer.valueOf(1000).toString() + 10);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 1000 ï¿½ï¿½ ï¿½Ú¿ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			
 			//	ex)
 		}

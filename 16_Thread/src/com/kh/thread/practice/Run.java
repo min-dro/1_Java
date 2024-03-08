@@ -3,20 +3,20 @@ package com.kh.thread.practice;
 public class Run {
 	
 	public static void main(String[] args) {
-		System.out.println("---- ÇÁ·Î±×·¥ ½ÃÀÛ ----");
+		System.out.println("---- ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ ----");
 		
 		ThreadClass daemon = new ThreadClass("daemon");
-		daemon.setDaemon(true);		// µ¥¸ó ½º·¹µå ¼³Á¤
+		daemon.setDaemon(true);		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		daemon.setContextClassLoader(null);
 	}
 	public static void threadTest02() {
-		// Thread °´Ã¼ 3°³ »ý¼º
+		// Thread ï¿½ï¿½Ã¼ 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		ThreadClass t1 = new ThreadClass("Thread-01");
 		ThreadClass t2 = new ThreadClass("Thread-02");
 		ThreadClass t3 = new ThreadClass("Thread-03");
 		
-		// t3 ½º·¹µå°¡ °¡Àå ¸ÕÀú ½ÇÇàÇÏµµ·Ï Ã³¸®
-		//	setPriority(¿ì¼±¼øÀ§°ª) : ¿ì¼±¼øÀ§ ±âº» °ª(5)
+		// t3 ï¿½ï¿½ï¿½ï¿½ï¿½å°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
+		//	setPriority(ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) : ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ ï¿½âº» ï¿½ï¿½(5)
 		t1.setPriority(1);
 		t2.setPriority(5);
 		t3.setPriority(7);
@@ -27,19 +27,19 @@ public class Run {
 	}
 	
 	public static void threadTest01() {
-		System.out.println("** ÇÁ·Î±×·¥ ½ÃÀÛ **");
+		System.out.println("** ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ **");
 		
-		// 1. Thread Å¬·¡½º¸¦ »ó¼ÓÇßÀ» °æ¿ì
+		// 1. Thread Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 //		ThreadClass tc = new ThreadClass();
 //		tc.start();
 		
-		// 2. Runnable ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÑ °æ¿ì
+		// 2. Runnable ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		ThreadInterface ti = new ThreadInterface();
 		
-		Thread t2 = new Thread(ti); // Thread °´Ã¼ »ý¼º ½Ã Á¤ÀÇÇÑ Å¬·¡½º Àü´Þ
+		Thread t2 = new Thread(ti); // Thread ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		t2.start();
 		
-		// main ½º·¹µå°¡ t2 ½º·¹µåÀÇ ÀÛ¾÷À» ±â´Ù¸®°Ô ÇÏ·Á¸é? .join()
+		// main ï¿½ï¿½ï¿½ï¿½ï¿½å°¡ t2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ï¿½? .join()
 		try {
 			
 			t2.join();
@@ -49,7 +49,7 @@ public class Run {
 			e.printStackTrace();
 		}
 		
-		System.out.println("** ÇÁ·Î±×·¥ Á¾·á **");
+		System.out.println("** ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ **");
 	}
 	
 }

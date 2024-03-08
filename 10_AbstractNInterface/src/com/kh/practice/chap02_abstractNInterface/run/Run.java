@@ -8,7 +8,7 @@ public class Run {
 		PhoneController pc = new PhoneController();
 		String[] result = pc.method();
 		
-		// foreach¹®
+		// foreachï¿½ï¿½
 		for(String item: result) {
 			System.out.println(item);
 			System.out.println();

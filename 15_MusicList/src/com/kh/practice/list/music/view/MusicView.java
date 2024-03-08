@@ -9,17 +9,17 @@ public class MusicView {
 	private Scanner sc = new Scanner(System.in);
 	private MusicController mc = new MusicController();
 	public void mainMenu() {
-		System.out.println("******* ¸ÞÀÎ ¸Þ´º *******");
-		System.out.println("1. ¸¶Áö¸· À§Ä¡¿¡ °î Ãß°¡");
-		System.out.println("2. Ã¹ À§Ä¡¿¡ °î Ãß°¡");
-		System.out.println("3. ÀüÃ¼ °î ¸ñ·Ï Ãâ·Â");
-		System.out.println("4. Æ¯Á¤ °î °Ë»ö");
-		System.out.println("5. Æ¯Á¤ °î »èÁ¦");
-		System.out.println("6. Æ¯Á¤ °î Á¤º¸ ¼öÁ¤");
-		System.out.println("7. °î¸í ¿À¸§Â÷¼ø Á¤·Ä");
-		System.out.println("8. °¡¼ö¸í ³»¸²Â÷¼ø Á¤·Ä");
-		System.out.println("9. Á¾·á");
-		System.out.print("¸Þ´º ¹øÈ£ ¼±ÅÃ : ");
+		System.out.println("******* ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ *******");
+		System.out.println("1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½");
+		System.out.println("2. Ã¹ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½");
+		System.out.println("3. ï¿½ï¿½Ã¼ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
+		System.out.println("4. Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½Ë»ï¿½");
+		System.out.println("5. Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("6. Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("7. ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("8. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("9. ï¿½ï¿½ï¿½ï¿½");
+		System.out.print("ï¿½Þ´ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ : ");
 		int num = sc.nextInt();
 		switch(num) {
 		case 1:
@@ -47,17 +47,17 @@ public class MusicView {
 			descSinger();
 			break;
 		case 9:
-			System.out.println("Á¾·á");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 			break;
 		default:
-			System.out.println("Àß¸øÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¿© ÁÖ¼¼¿ä.");
+			System.out.println("ï¿½ß¸ï¿½ï¿½Ô·ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¿ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.");
 		}
 	}
 	public void addList() {
-		System.out.println("****** ¸¶Áö¸· À§Ä¡¿¡ °î Ãß°¡ ******");
-		System.out.print("°î ¸í : ");
+		System.out.println("****** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½ ******");
+		System.out.print("ï¿½ï¿½ ï¿½ï¿½ : ");
 		String title = sc.nextLine();
-		System.out.print("°¡¼ö ¸í : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : ");
 		String singer = sc.nextLine();
 		
 		if (mc.addList(null) == 1) {
@@ -67,37 +67,37 @@ public class MusicView {
 		
 	}
 	public void addAtZero() {
-		System.out.println("****** Ã¹ À§Ä¡¿¡ °î Ãß°¡ ******");
-		System.out.print("°î ¸í : ");
+		System.out.println("****** Ã¹ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ ï¿½ß°ï¿½ ******");
+		System.out.print("ï¿½ï¿½ ï¿½ï¿½ : ");
 		String title = sc.nextLine();
-		System.out.print("°¡¼ö ¸í : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : ");
 		String singer = sc.nextLine();
 		mc.addAtZero(null);
 	}
 	public void printAll() {
-		System.out.println("****** ÀüÃ¼ °î ¸ñ·Ï Ãâ·Â ******");
+		System.out.println("****** ï¿½ï¿½Ã¼ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ******");
 		mc.printAll();
 	}
 	public void searchMusic() {
-		System.out.println("****** Æ¯Á¤ °î °Ë»ö ******");
-		System.out.print("°î ¸í : ");
+		System.out.println("****** Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½Ë»ï¿½ ******");
+		System.out.print("ï¿½ï¿½ ï¿½ï¿½ : ");
 		String title = sc.nextLine();
 		mc.searchMusic(title);
 	}
 	public void removeMusic() {
-		System.out.println("****** Æ¯Á¤ °î »èÁ¦ ******");
+		System.out.println("****** Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ******");
 		String title = sc.nextLine();
 		mc.removeMusic(title);
 	}
 	public void setMusic() {
-		System.out.println("****** Æ¯Á¤ °î Á¤º¸ ¼öÁ¤ ******");
+		System.out.println("****** Æ¯ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ******");
 		String title = sc.nextLine();
 		mc.setMusic(title, null);
 	}
 	public void ascTitle() {
-		System.out.println("****** °î ¸í ¿À¸§Â÷¼ø Á¤·Ä ******");
+		System.out.println("****** ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ******");
 	}
 	public void descSinger() {
-		System.out.println("****** °¡¼ö ¸í ³»¸²Â÷¼ø Á¤·Ä ******");
+		System.out.println("****** ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ******");
 	}
 }

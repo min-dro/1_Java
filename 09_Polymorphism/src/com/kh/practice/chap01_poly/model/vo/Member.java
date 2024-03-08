@@ -1,13 +1,13 @@
 package com.kh.practice.chap01_poly.model.vo;
 
 public class Member {
-	// ÇÊµåºÎ
-	private String name;		// È¸¿ø¸í
-	private int age;			// È¸¿ø³ªÀÌ
-	private char gender;		// ¼ºº°
-	private int couponCount;	// ¿ä¸®ÇÐ¿ø ÄíÆù °³¼ö = 0 (intÇü º¯¼öÀÇ ±âº» °ª: 0)
+	// ï¿½Êµï¿½ï¿½
+	private String name;		// È¸ï¿½ï¿½ï¿½ï¿½
+	private int age;			// È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private char gender;		// ï¿½ï¿½ï¿½ï¿½
+	private int couponCount;	// ï¿½ä¸®ï¿½Ð¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = 0 (intï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº» ï¿½ï¿½: 0)
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Member() {}
 	public Member(String name, int age, char gender) {
 		this.name = name;
@@ -15,7 +15,7 @@ public class Member {
 		this.gender = gender;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public String toString() {
 		return String.format("Member [name=%s, age=%d, gender=%c, couponCount=%d]",
 								name, age, gender, couponCount);

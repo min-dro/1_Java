@@ -1,11 +1,11 @@
 package com.kh.thread.practice2;
 /*
- 	- Increment Å¬·¡½º
- 		ÇÊµå		: -num:int
- 		»ý¼ºÀÚ : +Increment(num:int)
- 		¸Þ¼Òµå : +run():void
- 		1ºÎÅÍ num ±îÁö Á¤¼ö¸¦ 2¾¿ Áõ°¡½ÃÅ´
- 		Áõ°¡ ÈÄ Ãâ·Â 0.05ÃÊ¸¶´Ù ¹Ýº¹
+ 	- Increment Å¬ï¿½ï¿½ï¿½ï¿½
+ 		ï¿½Êµï¿½		: -num:int
+ 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : +Increment(num:int)
+ 		ï¿½Þ¼Òµï¿½ : +run():void
+ 		1ï¿½ï¿½ï¿½ï¿½ num ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´
+ 		ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ 0.05ï¿½Ê¸ï¿½ï¿½ï¿½ ï¿½Ýºï¿½
  */
 public class Increment implements Runnable{
 	private int num;
@@ -17,7 +17,7 @@ public class Increment implements Runnable{
 	@Override
 	public void run() {
 		for(int i=1; i <= num; i+=2) {
-			if (i > 1)  // Áõ°¡ ÈÄ Ãâ·Â
+			if (i > 1)  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
 				System.out.println("Inc:::" + i);
 			try {
 				Thread.sleep(50);

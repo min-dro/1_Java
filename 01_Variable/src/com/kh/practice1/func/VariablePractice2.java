@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class VariablePractice2 {
 	public void Practice() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ã¹ ¹øÂ° Á¤¼ö : ");
+		System.out.print("Ã¹ ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ : ");
 		int a = sc.nextInt();
-		System.out.print("µÎ ¹øÂ° Á¤¼ö : ");
+		System.out.print("ï¿½ï¿½ ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ : ");
 		int b = sc.nextInt();
 		System.out.print("\n");
-		System.out.println("´õÇÏ±â °á°ú : " + (a + b));
-		System.out.println("»©±â °á°ú : " + (a - b));
-		System.out.println("°öÇÏ±â °á°ú : " + (a * b));
-		System.out.println("³ª´©±â ¸ò °á°ú : " + (a / b));
+		System.out.println("ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ : " + (a + b));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : " + (a - b));
+		System.out.println("ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ : " + (a * b));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ : " + (a / b));
 	}
 }

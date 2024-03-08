@@ -1,69 +1,69 @@
 package com.kh.practice;
 
-import java.util.StringTokenizer;		// java.util. °æ·Î¿¡
+import java.util.StringTokenizer;		// java.util. ï¿½ï¿½Î¿ï¿½
 
 public class StringTokenizerTest {
 
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­(String) °ü·Ã ¸Þ¼Òµå
-		//	- String.format("¹®ÀÚ¿­ ")
-		//	- ¹®ÀÚ¿­.charAt(index)
-		//	- ¹®ÀÚ¿­.length()
-		//	- ¹®ÀÚ¿­.equals(¹®ÀÚ¿­A)
+		// ï¿½ï¿½ï¿½Ú¿ï¿½(String) ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½
+		//	- String.format("ï¿½ï¿½ï¿½Ú¿ï¿½ ")
+		//	- ï¿½ï¿½ï¿½Ú¿ï¿½.charAt(index)
+		//	- ï¿½ï¿½ï¿½Ú¿ï¿½.length()
+		//	- ï¿½ï¿½ï¿½Ú¿ï¿½.equals(ï¿½ï¿½ï¿½Ú¿ï¿½A)
 		
 		String str = "  Hello  ";
 		
 		System.out.println(str.charAt(0));
 		System.out.println(str.indexOf("el"));
 		
-		System.out.println(str.repeat(5));	// repeat(count) : count¸¸Å­ ¹Ýº¹
+		System.out.println(str.repeat(5));	// repeat(count) : countï¿½ï¿½Å­ ï¿½Ýºï¿½
 		
-		System.out.println(str.replace("ll", "p"));	//replave([old], [new]) : old¿¡ ÇØ´çÇÏ´Â °ªÀ»                         
+		System.out.println(str.replace("ll", "p"));	//replave([old], [new]) : oldï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½                         
 		System.out.println(str.substring(3));
 		System.out.println(str.toLowerCase());
 	} 
 	public void test2() {
 		// key : name, phone, address, email
-				//  - key¿¡ ÇØ´çÇÏ´Â °ª°ú value¿¡ ÇØ´çÇÏ´Â °ªÀ» (:)·Î ±¸ºÐ
-				//  - °¢ Á¤º¸´Â (,)·Î ±¸ºÐ
+				//  - keyï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ valueï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ (:)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+				//  - ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (,)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				String data = "name:Hong, phone:010-1234-5678, address: gangnam, email: hong12@gmail.com";
 				
-				// StringTokenizer ¸¦ »ç¿ëÇÏ¿© ¾Æ·¡ ³»¿ëÀ» Ãâ·Â
-				//  ÀÌ¸§Àº HongÀÌ°í, ¿¬¶ôÃ³´Â 010-1234-5678ÀÌ°í, ÁÖ¼Ò´Â gangnamÀÌ°í, ÀÌ¸ÞÀÏÀº hong12@gmail.com ÀÔ´Ï´Ù.
+				// StringTokenizer ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Æ·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+				//  ï¿½Ì¸ï¿½ï¿½ï¿½ Hongï¿½Ì°ï¿½, ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ 010-1234-5678ï¿½Ì°ï¿½, ï¿½Ö¼Ò´ï¿½ gangnamï¿½Ì°ï¿½, ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ hong12@gmail.com ï¿½Ô´Ï´ï¿½.
 				//		  %s				  %s				  %s					%s
 				
 				
 				int index =0 ;
-				// (1) (,)·Î ±¸ºÐÇÏ¿© ÅäÅ«È­
+				// (1) (,)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Å«È­
 				StringTokenizer st = new StringTokenizer(data, ",");
 				
 				while(st.hasMoreTokens()) {
-					String keyValue = st.nextToken();		// , ±âÁØÀ¸·Î ÅäÅ«È­ÇÏ¿© ¹®ÀÚ¿­À» ÀúÀå
+					String keyValue = st.nextToken();		// , ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å«È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					System.out.print(keyValue);
 					
-					// (2) (:)À¸·Î ±¸ºÐÇÏ¿© ÅäÅ«È­
+					// (2) (:)ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Å«È­
 					StringTokenizer st2 = new StringTokenizer(keyValue, ":");
 					
 				}
-//				System.out.printf("ÀÌ¸§Àº %sÀÌ°í, ¿¬¶ôÃ³´Â %sÀÌ°í, ÁÖ¼Ò´Â %sÀÌ°í, ÀÌ¸ÞÀÏÀº %sd ÀÔ´Ï´Ù.", args);
+//				System.out.printf("ï¿½Ì¸ï¿½ï¿½ï¿½ %sï¿½Ì°ï¿½, ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ %sï¿½Ì°ï¿½, ï¿½Ö¼Ò´ï¿½ %sï¿½Ì°ï¿½, ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ %sd ï¿½Ô´Ï´ï¿½.", args);
 	}
 	public void test() {
-		// StringTokenizer : ¹®ÀÚ¿­ ³»¿¡ Æ¯Á¤ ±¸ºÐÀÚ·Î ³ª´²ÁÖ´Â Å¬·¡½º(ÅäÅ«È­)
+		// StringTokenizer : ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Å«È­)
 		
-				String msg = "¾È³çÇÏ¼¼¿ä|³ª´Â´©±¸ÀÔ´Ï´Ù|¹Ý°©½À´Ï´Ù"; // Æ¯Á¤ ±¸ºÐÀÚ : |
+				String msg = "ï¿½È³ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½|ï¿½Ý°ï¿½ï¿½ï¿½ï¿½Ï´ï¿½"; // Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : |
 				
 				String[] arr = new String[3];
 				int i = 0;
 				
 				StringTokenizer st = new StringTokenizer(msg, "|");
 				
-				// º¯¼ö¸í.hashMoreTokens() : ±¸ºÐÀÚ¸¦ ÅëÇØ ÅäÅ«È­ÇÒ ¼ö ÀÖ´Â Áö È®ÀÎÇÏ´Â ¸Þ¼Òµå
-				//							true/false : true(ÅäÅ«È­ °¡´É) false(ÅäÅ«È­ ºÒ°¡)
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.hashMoreTokens() : ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å«È­ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+				//							true/false : true(ï¿½ï¿½Å«È­ ï¿½ï¿½ï¿½ï¿½) false(ï¿½ï¿½Å«È­ ï¿½Ò°ï¿½)
 				
-				while(st.hasMoreTokens()) { // ÅäÅ«È­°¡ °¡´ÉÇÏ´Ù¸é °è¼Ó ¹Ýº¹¹®À» ½ÇÇàÇÑ´Ù.
+				while(st.hasMoreTokens()) { // ï¿½ï¿½Å«È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´Ù¸ï¿½ ï¿½ï¿½ï¿½ ï¿½Ýºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
 					
-					// º¯¼ö¸í.nextToken(): ±¸ºÐÀÚ ±âÁØÀ¸·Î °ªÀ» ºÐ¸®ÇØ¼­ ¹ÝÈ¯ÇÏ´Â ¸Þ¼Òµå
-					//					 °ªÀ» ¹ÝÈ¯ÇÏ°í ´ÙÀ½ ±¸ºÐÀÚ À§Ä¡·Î ÀÌµ¿
+					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.nextToken(): ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¸ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
+					//					 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½
 					// System.out.println(st.nextToken());
 					arr[i] = st.nextToken();
 					System.out.println(arr[i]);

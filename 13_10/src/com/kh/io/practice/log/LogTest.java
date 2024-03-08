@@ -3,21 +3,21 @@ package com.kh.io.practice.log;
 public class LogTest {
 	public static void main(String[] args) {
 		FileDAO log = new FileDAO();
-		// ÆÄÀÏ »ý¼º
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 //		log.acess("log.txt" , 1);
 		
-		// ¿¹¿Ü Ã³¸®
+		// ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
 		int[] arr = new int[3];
 		
 		for(int i=0; i<4; i++) {
 			arr[i] = i;
 		}
 //	} catch(ArrayIndexOutOfBoundsException e) {
-//		System.out.print("");log.write();("[Exception]" + e.getMessage() + "\n"));	// getMessage() ¿¹¿Ü °ü·Ã ¸Þ½ÃÁö
+//		System.out.print("");log.write();("[Exception]" + e.getMessage() + "\n"));	// getMessage() ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½
 		
 		
 //	}finally {
-		System.out.println("try ~catch Á¾·á");
-//		log.close(1);		// (*) close¸¦ ÇÏÁö ¾ÊÀ¸¸é ÆÄÀÏ °ü·Ã Ã³¸®°¡ ¿Ï·áµÇÁö ¾ÊÀ½.
+		System.out.println("try ~catch ï¿½ï¿½ï¿½ï¿½");
+//		log.close(1);		// (*) closeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 	}
 }

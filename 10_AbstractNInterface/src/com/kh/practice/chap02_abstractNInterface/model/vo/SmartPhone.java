@@ -1,14 +1,14 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public abstract class SmartPhone implements CellPhone, TouchDisplay{
-	// ÇÊµåºÎ (º¯¼ö/ÇÊµå/¸É¹ö º¯¼ö)
-	private String maker;		// Á¦Á¶»ç Á¤º¸
+	// ï¿½Êµï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½/ï¿½Êµï¿½/ï¿½É¹ï¿½ ï¿½ï¿½ï¿½ï¿½)
+	private String maker;		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public SmartPhone() {}
 	
-	// ¸Þ¼ÒµåºÎ
-	public abstract String printInformation();	// Ãß»ó¸Þ¼Òµå
+	// ï¿½Þ¼Òµï¿½ï¿½
+	public abstract String printInformation();	// ï¿½ß»ï¿½Þ¼Òµï¿½
 	
 	public void setMaker(String maker) {
 		this.maker = maker;

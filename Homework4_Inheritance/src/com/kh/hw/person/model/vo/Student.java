@@ -1,12 +1,12 @@
 package com.kh.hw.person.model.vo;
 
-// Person Å¬·¡½º·ÎºÎÅÍ »ó¼Ó¹ÞÀ½
+// Person Å¬ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½
 public class Student extends Person {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	private int grade;
 	private String major;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Student() {}
 	public Student(String name, int age, double height, double weight, int grade, String major) {
 		super(name, age, height, weight);
@@ -15,7 +15,7 @@ public class Student extends Person {
 		this.major = major;
 	}
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	//	getter/setter
 	public int getGrade() {
 		return grade;
@@ -33,9 +33,9 @@ public class Student extends Person {
 		this.major = major;
 	}
 	
-	//	* toString() : °¢ ÇÊµåÀÇ °ªÀ» ¹ÝÈ¯
+	//	* toString() : ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	public String toString() {
-		// ÇÊµå 6
+		// ï¿½Êµï¿½ 6
 		return super.toString() + ", " + grade + ", " + major;
 	}
 	

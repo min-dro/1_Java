@@ -3,35 +3,35 @@ package com.kh.practice.point.controller;
 import com.kh.practice.point.model.vo.Rectangle;
 
 public class RectangleController {
-	// ÇÊµåºÎ (1)
+	// ï¿½Êµï¿½ï¿½ (1)
 	private Rectangle r = new Rectangle();
 	
-	// »ý¼ºÀÚºÎ (0) : ±âº» »ý¼ºÀÚ¸¸ »ç¿ë
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ (0) : ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½
 	
-	// ¸Þ¼ÒµåºÎ (2)
+	// ï¿½Þ¼Òµï¿½ï¿½ (2)
 	public String calcArea(int x, int y, int height, int width) {
-		// ¸Å°³º¯¼ö·Î ¹ÞÀº °ªÀ» set¸Þ¼Òµå¸¦ »ç¿ëÇÏ¿© ÃÊ±âÈ­
+		// ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ setï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ê±ï¿½È­
 		r.setX(x);
 		r.setY(y);
 		r.setHeight(height);
 		r.setWidth(width);
-		// ¸éÀû °è»ê
-		//	¸éÀû : ³Êºñ * ³ôÀÌ
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		//	ï¿½ï¿½ï¿½ï¿½ : ï¿½Êºï¿½ * ï¿½ï¿½ï¿½ï¿½
 		int area = width * height;
 		
-		// ÃÊ±âÈ­ÇÑ Á¤º¸¿Í ¸éÀûÀ» °á°ú·Î ¹ÝÈ¯
-		return "¸éÀû : " + r.toString() + " / " + area;
+		// ï¿½Ê±ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		return "ï¿½ï¿½ï¿½ï¿½ : " + r.toString() + " / " + area;
 		
 	}
 	public String calcPerimeter(int x, int y, int height, int width) {
-		// ¸Å°³º¯¼ö·Î Àü´Þ¹ÞÀº °ªÀ» ÃÊ±âÈ­
+		// ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 		r.setX(x);
 		r.setY(y);
 		r.setHeight(height);
 		r.setWidth(width);
-		// µÑ·¹ °è»ê
-		//	µÑ·¹ : 2 * (³Êºñ + ³ôÀÌ)
+		// ï¿½Ñ·ï¿½ ï¿½ï¿½ï¿½
+		//	ï¿½Ñ·ï¿½ : 2 * (ï¿½Êºï¿½ + ï¿½ï¿½ï¿½ï¿½)
 		int perimeter = (width + height) * 2;
-		return "µÑ·¹ : " + r.toString() + " / " + perimeter;
+		return "ï¿½Ñ·ï¿½ : " + r.toString() + " / " + perimeter;
 	}
 }

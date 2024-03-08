@@ -7,18 +7,18 @@ public class ArrayTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] array = new int[10];
-		System.out.print("ÇÒ´çµÈ ¹è¿­ÀÇ Å©±â : ");
+		System.out.print("ï¿½Ò´ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ Å©ï¿½ï¿½ : ");
 		int num = sc.nextInt();
 		for(int i=0; i<num;i++) {
 			array[i]=(int)(Math.random()*100+1);
 		}
 		print(array);
-		System.out.println("°¡Àå Å« °ª : "+max(array));
-		System.out.println("°¡Àå ÀÛÀº °ª : "+min(array));
-		System.out.println("Â¦¼öÀÇ °³¼ö : "+evenCount(array));
-		System.out.println("È¦¼öÀÇ °³¼ö : "+oddCount(array));
-		System.out.println("ÇÕ°è : "+sum(array));
-		System.out.println("Æò±Õ : "+avg(array));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ : "+max(array));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ : "+min(array));
+		System.out.println("Â¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : "+evenCount(array));
+		System.out.println("È¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : "+oddCount(array));
+		System.out.println("ï¿½Õ°ï¿½ : "+sum(array));
+		System.out.println("ï¿½ï¿½ï¿½ : "+avg(array));
 		
 		
 	}

@@ -1,8 +1,8 @@
 package com.kh.generic.practice1;
 
-// Ãß»óÅ¬·¡½º (abstract)
+// ï¿½ß»ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ (abstract)
 public abstract class Material {
-	// Ãß»ó¸Þ¼Òµå
+	// ï¿½ß»ï¿½Þ¼Òµï¿½
 	//  + doPrinting() : void
 	public abstract void doPrinting();
 }

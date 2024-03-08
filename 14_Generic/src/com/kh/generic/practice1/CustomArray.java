@@ -6,12 +6,12 @@ public class CustomArray<T> {
 	Scanner sc = new Scanner(System.in);
 	protected Object[] arr = new Object[10];
 
-	// get ¸Þ¼Òµå¿¡ Å¸ÀÔ ¸Å°³º¯¼ö Àû¿ë
+	// get ï¿½Þ¼Òµå¿¡ Å¸ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	// StringArray Å¬·¡½º¸¦ È®ÀåÇÏ¿© ¿©·¯ Å¬·¡½º Å¸ÀÔÀ» Àû¿ëÇÒ ¼ö ÀÖµµ·Ï (Á¦³×¸¯)
+	// StringArray Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Öµï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½×¸ï¿½)
 
 	public void add(T element) {
-		System.out.print("(È¸¿øµî·Ï)È¸¿ø ¸í : ");
+		System.out.print("(È¸ï¿½ï¿½ï¿½ï¿½ï¿½)È¸ï¿½ï¿½ ï¿½ï¿½ : ");
 		element = (T) sc.nextLine();
 		for (int idx = 0; idx < arr.length; idx++) {
 			if (arr[idx] == null) {

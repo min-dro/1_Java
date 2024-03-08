@@ -1,12 +1,12 @@
 package com.kh.practice.point.model.vo;
 
-// Point Å¬·¡½º·ÎºÎÅÍ »ó¼ÓÀ» ¹ÞÀ½ (extends)
+// Point Å¬ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (extends)
 public class Rectangle extends Point {
-	// ÇÊµåºÎ
+	// ï¿½Êµï¿½ï¿½
 	private int width;
 	private int height;
 	
-	// »ý¼ºÀÚºÎ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½
 	public Rectangle() {}
 	public Rectangle(int x, int y, int width, int height) {
 		super(x, y);
@@ -28,8 +28,8 @@ public class Rectangle extends Point {
 	
 	@Override
 	public String toString() {
-		// ÇÊµåÀÇ °ªÀ» ¹®ÀÚ¿­·Î ¹ÝÈ¯
-		//	* super.toString() : ºÎ¸ð Å¬·¡½º(Point)
+		// ï¿½Êµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+		//	* super.toString() : ï¿½Î¸ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½(Point)
 		return String.format("%s %d %d", super.toString(), width, height);
 	}
 }

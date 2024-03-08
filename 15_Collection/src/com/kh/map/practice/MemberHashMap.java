@@ -7,43 +7,43 @@ import java.util.Set;
 
 import com.kh.set.practice.Member;
 
-// HashMap ±¸Á¶·Î Member µ¥ÀÌÅÍ¸¦ °ü¸®ÇÏ±â À§ÇÑ Å¬·¡½º
+// HashMap ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Member ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 public class MemberHashMap {
-	// ÇÊµå
+	// ï¿½Êµï¿½
 	// -hashMap:HashMap<Integer,Member>
 	private HashMap<Integer, Member> hashMap;
 	
-	// »ý¼ºÀÚ
-	// +MemberHashMap() // hashMap ÇÊµå¸¦ ÃÊ±âÈ­(ÀÎ½ºÅÏ½º »ý¼º)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	// +MemberHashMap() // hashMap ï¿½Êµå¸¦ ï¿½Ê±ï¿½È­(ï¿½Î½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 	public MemberHashMap() {
 		hashMap = new HashMap<>();
 	}
 	
-	// ¸Þ¼Òµå
-	// +addMember(member:Member):void		// HashMap¿¡ µ¥ÀÌÅÍ Ãß°¡(k: memberId, v: Member)
+	// ï¿½Þ¼Òµï¿½
+	// +addMember(member:Member):void		// HashMapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½(k: memberId, v: Member)
 	public void addMember(Member member) {
-		// Àü´ÞµÈ Member °´Ã¼ÀÇ Á¤º¸ Áß memberId °ªÀ» Å°·Î »ç¿ë, µ¥ÀÌÅÍ´Â member °´Ã¼ Á¤º¸ ±× ÀÚÃ¼¸¦ »ç¿ë
+		// ï¿½ï¿½ï¿½Þµï¿½ Member ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ memberId ï¿½ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ member ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½
 		hashMap.put(member.getMemberId(), member);
 	}
-	// +removeMember(memberId:int):boolean	// Á¦°Å ¼º°ø : true, ½ÇÆÐ: false(Á¦°ÅµÈ °ÍÀÌ ¾ø´Â °æ¿ì)
-											// ÇØ´ç µ¥ÀÌÅÍ°¡ ÀÖ´Â Áö È®ÀÎ ÈÄ ÀÖÀ¸¸é Á¦°Å. ¾øÀ¸¸é Á¦°Åx
+	// +removeMember(memberId:int):boolean	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : true, ï¿½ï¿½ï¿½ï¿½: false(ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½)
+											// ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ È®ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½x
 	public boolean removeMember(int memberId) {
-		// memberId : Map ¿¡¼­
-		if(hashMap.containsKey(memberId)) {		// containsKey(Å°°ª) : Map ³»¿¡ Å°°ª¿¡ ÇØ´çÇÏ´Â µ¥ÀÌÅä°¡ ÀÖ´Â Áö ¿©ºÎ
+		// memberId : Map ï¿½ï¿½ï¿½ï¿½
+		if(hashMap.containsKey(memberId)) {		// containsKey(Å°ï¿½ï¿½) : Map ï¿½ï¿½ï¿½ï¿½ Å°ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ä°¡ ï¿½Ö´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			hashMap.remove(memberId);
 			return true;
 		}
 		return false;
 	}
-	// +showAllMember():void				// Iterator »ç¿ëÇÏ¿© ÀúÀåµÈ µ¥ÀÌÅÍ¸¦ Ãâ·Â
+	// +showAllMember():void				// Iterator ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½
 	public void showAllMember() {
-		// (1) Iterator °´Ã¼ »ý¼º
+		// (1) Iterator ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 		Set<Integer> keyList = hashMap.keySet();
 		Iterator<Integer> iter = keyList.iterator();
 		
-		// (2) ¹Ýº¹¹® µ¹¸®¸é¼­, µ¥ÀÌÅÍ À¯/¹« Ã¼Å©ÇÏ°í Á¶È¸
+		// (2) ï¿½Ýºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½é¼­, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½/ï¿½ï¿½ Ã¼Å©ï¿½Ï°ï¿½ ï¿½ï¿½È¸
 		while(iter.hasNext()) {
-			Integer key = iter.next();		   // Å° °ªÀ» Á¶È¸
+			Integer key = iter.next();		   // Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 			Member m = hashMap.get(key);
 		}
 	}

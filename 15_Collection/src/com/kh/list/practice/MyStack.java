@@ -3,23 +3,23 @@ package com.kh.list.practice;
 import java.util.ArrayList;
 
 public class MyStack {
-	// ÇÊµå
+	// ï¿½Êµï¿½
 	// -arrayStack:ArrayList<String>=new ArrayList<>();
 	private ArrayList<String> arrayStack = new ArrayList<>();
-	// ¸Þ¼Òµå
-	// +push(String data):void // ¶ó½ºÆ®¿¡ data¸¦ Ãß°¡
+	// ï¿½Þ¼Òµï¿½
+	// +push(String data):void // ï¿½ï¿½Æ®ï¿½ï¿½ dataï¿½ï¿½ ï¿½ß°ï¿½
 	public void push(String data) {
 		arrayStack.add(data);
 	}
 	
-	// +pop():String			// ¶ó½ºÆ®ÀÇ ¸¶Áö¸· data¸¦ Á¦°ÅÇÏ°í ±× °ªÀ» ¹ÝÈ¯
-								// ¸®½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é "¸®½ºÆ®°¡ ºñ¾ú½À´Ï´Ù."¸¦ ¹ÝÈ¯
-	// ¸¶Áö¸· À§Ä¡ : ¸®½ºÆ®ÀÇ ±æÀÌ...
+	// +pop():String			// ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ dataï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+								// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½."ï¿½ï¿½ ï¿½ï¿½È¯
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ : ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½...
 	public String pop() {
 		
 		for(int i=0;i<arrayStack.size();i++) {
 			if(arrayStack.isEmpty()) {
-				return "¸®½ºÆ®°¡ ºñ¾ú½À´Ï´Ù.";
+				return "ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.";
 			} else {
 				System.out.println(arrayStack.get(arrayStack.size()-1));
 			}

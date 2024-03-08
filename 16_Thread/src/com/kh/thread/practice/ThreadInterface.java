@@ -1,8 +1,8 @@
 package com.kh.thread.practice;
 
-// 2. Runnable ÀÎÅÍÆä¸®½º ±¸Çö  
+// 2. Runnable ï¿½ï¿½ï¿½ï¿½ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  
 public class ThreadInterface implements Runnable{
-	// run ¸Þ¼Òµå ÀçÁ¤ÀÇ(¿À¹ö¶óÀÌµù)
+	// run ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½)
 	@Override
 	public void run() {
 		for(int i=0; i<10; i++) {

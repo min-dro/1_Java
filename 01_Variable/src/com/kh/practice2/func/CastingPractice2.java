@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CastingPractice2 {
 	public void Practice() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("±¹¾î : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		double kor = sc.nextDouble();
-		System.out.print("¿µ¾î : "); 
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : "); 
 		double eng = sc.nextDouble();
-		System.out.print("¼öÇÐ : ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ : ");
 		double math = sc.nextDouble();
 		
 		System.out.println("");
-		System.out.println("ÃÑÁ¡ : " + (int)(kor + eng + math));
-		System.out.println("Æò±Õ : " + (int)((kor + eng + math) / 3));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + (int)(kor + eng + math));
+		System.out.println("ï¿½ï¿½ï¿½ : " + (int)((kor + eng + math) / 3));
 	}
 }

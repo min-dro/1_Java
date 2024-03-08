@@ -9,11 +9,11 @@ public class Run {
 		int num1 = 10;
 		int num2 = 50;
 		System.out.println("num1: " + num1 + ", num2: " + num2);
-		System.out.println("´õÇÏ±â °á°ú: " + calc.add(num1, num2));
-		System.out.println("»¾±â °á°ú: " + calc.substract(num1, num2));
-		System.out.println("°öÇÏ±â °á°ú: " + calc.times(num1, num2));
-		System.out.println("³ª´©±â °á°ú: " + calc.divide(num1, num2));
+		System.out.println("ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½: " + calc.add(num1, num2));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: " + calc.substract(num1, num2));
+		System.out.println("ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½: " + calc.times(num1, num2));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: " + calc.divide(num1, num2));
 		
-		System.out.println("³ª´©±â °á°ú (10, 0) : " + calc.divide(num1, 0));
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (10, 0) : " + calc.divide(num1, 0));
 	}
 }

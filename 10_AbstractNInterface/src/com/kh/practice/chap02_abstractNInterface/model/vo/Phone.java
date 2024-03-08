@@ -1,15 +1,15 @@
 package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public interface Phone {
-	// »ó¼ö
+	// ï¿½ï¿½ï¿½
 	public static final char[] NUMBERPAD = {'1', '2', '3', 
 											'4', '5', '6', 
 											'7', '8', '9', 
 											'*', '0', '#'};
-	// Ãß»ó¸Þ¼Òµå
-	//	- ÀüÈ­ °É±â ±â´É
+	// ï¿½ß»ï¿½Þ¼Òµï¿½
+	//	- ï¿½ï¿½È­ ï¿½É±ï¿½ ï¿½ï¿½ï¿½
 	public abstract String makeCall();
 	
-	//	- ÀüÈ­ ¹Þ±â ±â´É
+	//	- ï¿½ï¿½È­ ï¿½Þ±ï¿½ ï¿½ï¿½ï¿½
 	public abstract String takeCall();
 }

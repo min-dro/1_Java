@@ -7,21 +7,21 @@ public class IOPractice {
 	
 	}
 	public static void fileReaderTest() {
-		// (4) ÆÄÀÏ ÀÔ·Â : FileReader (¹®ÀÚ ´ÜÀ§)
-		FileReader fr = null;		// FileReader ÂüÁ¶º¯¼ö¸¦ null·Î ÃÊ±âÈ­
+		// (4) ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : FileReader (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+		FileReader fr = null;		// FileReader ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ nullï¿½ï¿½ ï¿½Ê±ï¿½È­
 		
 		try {
 			
 			fr = new FileReader("test2.txt");
 			
 			int result;
-			char[] buffer = new char[1024]; // 2ÀÇ 10½Â..> 1024
+			char[] buffer = new char[1024]; // 2ï¿½ï¿½ 10ï¿½ï¿½..> 1024
 			
-			while((result = fr.read(buffer)) != -1) {	// .read(buffer) : ¸Þ¼Òµå È£Ãâ °á°ú ˆ© : ÀÐ¾î ¿Â µ¥ÀÌÅÍ ±æÀÌ
-														//	  * buffer : ÆÄÀÏ¿¡¼­ ÀÐÀº µ¥ÀÌÅÍ°¡ ÀúÀåµÊ
+			while((result = fr.read(buffer)) != -1) {	// .read(buffer) : ï¿½Þ¼Òµï¿½ È£ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ : ï¿½Ð¾ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+														//	  * buffer : ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 				String fileData =  new String(buffer, 0, result);
-								// new String(char[], offset, count) : offset(½ÃÀÛÀ§Ä¡), count(µ¥ÀÌÅÍ±æÀÌ)
-				System.out.println(fileData);			// ÀÐ¾î ¿Â µ¥ÀÌÅÍ¸¦ ÄÜ¼ÖÃ¢¿¡ Ãâ·Â
+								// new String(char[], offset, count) : offset(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡), count(ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½)
+				System.out.println(fileData);			// ï¿½Ð¾ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ü¼ï¿½Ã¢ï¿½ï¿½ ï¿½ï¿½ï¿½
 			}
 			
 			fr.close();
@@ -35,19 +35,19 @@ public class IOPractice {
 			try {
 				if (fr != null) fr.close();
 			} catch(IOException e) {
-				System.out.println("finally ºÎºÐ¿¡¼­ Exception ¹ß»ý");
+				System.out.println("finally ï¿½ÎºÐ¿ï¿½ï¿½ï¿½ Exception ï¿½ß»ï¿½");
 			}
 		}
 	}
 	public static void fileWriteTest() {
-		// (3) ÆÄÀÏ Ãâ·Â : FileWriter (¹®ÀÚ ´ÜÀ§)
-		FileWriter fw = null;		// FileWriter ÂüÁ¶º¯¼ö¸¦ null·Î ÃÊ±âÈ­
+		// (3) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : FileWriter (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+		FileWriter fw = null;		// FileWriter ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ nullï¿½ï¿½ ï¿½Ê±ï¿½È­
 		try {
 			
 			fw = new FileWriter("test2.txt");
-			fw.write("¾È³çÇÏ¼¼¿ä.\n");			// FileWriter Å¬·¡½º´Â ¹®ÀÚ ´ÜÀ§·Î Ãâ·ÂÀÌ °¡´ÉÇØ¼­
-			fw.write("³ª´Â ÀÓ¼öÁøÀÔ´Ï´Ù.");		//	¹®ÀÚ¿­À» ¾µ ¼ö ÀÖÀ½.
-											//	ÀÌ½ºÄÉÀÌÇÁ ¹®ÀÚ(\n, \t) Àû¿ëµÊ
+			fw.write("ï¿½È³ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.\n");			// FileWriter Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½
+			fw.write("ï¿½ï¿½ï¿½ï¿½ ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");		//	ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+											//	ï¿½Ì½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(\n, \t) ï¿½ï¿½ï¿½ï¿½ï¿½
 			fw.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -60,16 +60,16 @@ public class IOPractice {
 	}
 	
 	public static void fileInputStreamTest() {
-		// (2) ÆÄÀÏ ÀÔ·Â : FileInputStream (¹ÙÀÌÆ® ´ÜÀ§)
+		// (2) ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : FileInputStream (ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½)
 		FileInputStream fis = null;
 		
 		try {
 			
-			fis = new FileInputStream("test.txt");		// »ó´ë°æ·Î : ÆÄÀÏ¸í¸¸ ÀÛ¼ºÇÑ °æ¿ì ÇÁ·ÎÁ§Æ® »óÀ§°æ·Î¿¡ »ý¼º/ÀÐÀ½
+			fis = new FileInputStream("test.txt");		// ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½
 			
 			int i;
-			while((i = fis.read()) != -1) {	// i ¶ó´Â º¯¼ö¿¡ ÆÄÀÏ¿¡¼­ ÀÐ¾î¿Â °ªÀ» ÀúÀåÇÏ°í, ±× °ªÀÌ -1ÀÌ ¾Æ´ÑÁö ¹Ì±³
-				System.out.println(i);		// ÆÄÀÏ¿¡¼­ ÀÐ¾î¿Â °ª (i)À» Ãâ·Â
+			while((i = fis.read()) != -1) {	// i ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ -1ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½ ï¿½Ì±ï¿½
+				System.out.println(i);		// ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ ï¿½ï¿½ (i)ï¿½ï¿½ ï¿½ï¿½ï¿½
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -84,23 +84,23 @@ public class IOPractice {
 		}
 	}
 	public static void fileOutputStreamTest() {
-		// (1) ÆÄÀÏ Ãâ·Â : FileOutStream (¹ÙÀÌÆ® ´ÜÀ§)
-		FileOutputStream fos = null; // FileOutputStream ÂüÁ¶º¯¼ö ¼±¾ð ÈÄ null·Î ÃÊ±âÈ­
-		try { // ÆÄÀÏ °ü·Ã Å¬·¡½º »ç¿ë ½Ã IQException ¿¹¿ÜÃ³¸®°¡ "ÇÊ¼ö"ÀÌ¹Ç·Î try~catch¹® »ç¿ë
+		// (1) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : FileOutStream (ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½)
+		FileOutputStream fos = null; // FileOutputStream ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ nullï¿½ï¿½ ï¿½Ê±ï¿½È­
+		try { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ IQException ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ "ï¿½Ê¼ï¿½"ï¿½Ì¹Ç·ï¿½ try~catchï¿½ï¿½ ï¿½ï¿½ï¿½
 
 			fos = new FileOutputStream("test.txt"); // FileOutputStream
 
-			fos.write(10); // write() : ÆÄÀÏ¿¡ µ¥ÀÌÅÍ¸¦ ¾µ ‹š »ç¿ëÇÏ´Â ¸Þ¼Òµå
+			fos.write(10); // write() : ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 			fos.write(50);
-			fos.close(); // close() : ½ºÆ®¸² »ç¿ë ÈÄ ´Ý¾ÆÁÖ´Â ¸Þ¼Òµå
+			fos.close(); // close() : ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ý¾ï¿½ï¿½Ö´ï¿½ ï¿½Þ¼Òµï¿½
 
-		} catch (FileNotFoundException e) { 	// FileOutputStream °´Ã¼ »ý¼º ½Ã ¹ß»ý°¡´É¶õ ¿¹¿Ü
+		} catch (FileNotFoundException e) { 	// FileOutputStream ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ï¿½É¶ï¿½ ï¿½ï¿½ï¿½ï¿½
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IOException e) { // write(), close(), .. ¸Þ¼Òµå »ç¿ä ½Ã ¹ß»ý°¡´ÉÇÑ ¿¹¿Ü
+		} catch (IOException e) { // write(), close(), .. ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			e.printStackTrace();
 		} finally {
-			// ÇÁ·Î±×·¥ Áß°£¿¡ ¿¹¿Ü ¹ß»ý ½Ã ½ºÆ®¸²ÀÌ ´ÝÈ÷Áö ¾Ê´Â °æ¿ì ´Ý¾ÆÁÖ±â À§ÇØ ÀÛ¼º
+			// ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ ï¿½ï¿½ï¿½ ï¿½Ý¾ï¿½ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
 			try {
 				if (fos != null)
 					fos.close();

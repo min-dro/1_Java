@@ -1,22 +1,22 @@
 package com.kh.thread.practice;
 
 
-// 1. Thread Å¬·¡½º »ó¼Ó
+// 1. Thread Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 public class ThreadClass extends Thread {
 	private String name;
 	public ThreadClass(String name) {
 		this.name = name;
 	}
-	// run ¸Þ¼Òµå¸¦ ¿À¹ö¶óÀÌµù
-	// ¿À¹ö¶óÀÌµù ÀÚµ¿¿Ï¼º ´ÜÃàÅ°: Alt + Shift + s -> V
+	// run ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Úµï¿½ï¿½Ï¼ï¿½ ï¿½ï¿½ï¿½ï¿½Å°: Alt + Shift + s -> V
 	@Override
 	public void run() {
 		for (int i = 0; i < 100; i++) {
-			// this.getClass() : ÇöÀç Å¬·¡½º Á¤º¸
+			// this.getClass() : ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			System.out.println(this.getClass() + ": " + i);
 			try {
-				// µô·¹ÀÌ ½ÃÅ°±â. (Thread.sleep())
-				Thread.sleep(1000);// 1ÃÊ°£ µô·¹ÀÌ
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å°ï¿½ï¿½. (Thread.sleep())
+				Thread.sleep(1000);// 1ï¿½Ê°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

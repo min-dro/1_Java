@@ -15,7 +15,7 @@ public class Horse implements Runnable {
 	@Override
 	public void run() {
 		for(;meter>0;meter-=20) {
-			System.out.println(name + "юг Ё╡ю╨ ╧лем╪Ж╢б "+meter+"╧лем ют╢о╢ы");
+			System.out.println(name + "О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫м╪О©╫О©╫О©╫ "+meter+"О©╫О©╫О©╫О©╫ О©╫т╢о╢О©╫");
 			try {
 				Thread.sleep((int) (Math.random()*3000+1));
 			} catch (InterruptedException e) {

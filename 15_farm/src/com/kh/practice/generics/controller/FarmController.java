@@ -7,42 +7,42 @@ import com.kh.practice.generics.model.vo.Farm;
 import com.kh.practice.generics.model.vo.Fruit;
 
 public class FarmController {
-	// ÇÊµåºÎ
-	// Map<K, V> => K: Å° °ª, V: µ¥ÀÌÅÍ °ª
+	// ï¿½Êµï¿½ï¿½
+	// Map<K, V> => K: Å° ï¿½ï¿½, V: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 	private HashMap<Farm, Integer> hMap = new HashMap<>();
 	// ArrayList
-	private ArrayList<Farm> list = new ArrayList<>();	// ³ó»ê¹° ±¸¸Å µ¥ÀÌÅÍ
+	private ArrayList<Farm> list = new ArrayList<>();	// ï¿½ï¿½ê¹° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	// ¸Þ¼ÒµåºÎ
+	// ï¿½Þ¼Òµï¿½ï¿½
 	public boolean addNewKind(Farm f, int amount) {
-		if(!hMap.containsKey(f)) { // containsKey(Å°°ª) : ÇØ´ç Å°°ªÀÌ Map¿¡ Á¸ÀçÇÏ´Â Áö Ã¼Å©
-			// hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å° °ªÀÌ ¾øÀ» °æ¿ì
-			//	hMap¿¡ µ¥ÀÌÅÍ Ãß°¡
+		if(!hMap.containsKey(f)) { // containsKey(Å°ï¿½ï¿½) : ï¿½Ø´ï¿½ Å°ï¿½ï¿½ï¿½ï¿½ Mapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ Ã¼Å©
+			// hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+			//	hMapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 			hMap.put(f, amount);
 			return true;
 		}
 		
-		// if¹®À» µé¾î°¡Áö ¸øÇÑ °æ¿ì hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å°°¡ ÀÖÀ» °æ¿ì (µ¥ÀÌÅÍ ÀÖÀ½)
+		// ifï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
 		return false;
 	}
 	public boolean removeKind(Farm f) {
 		if(hMap.containsKey(f)) {
-			// hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å° °ª¾Æ Á¸ÀçÇÏ´Â °æ¿ì µ¥ÀÌÅÍ »èÁ¦
+			// hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			hMap.remove(f);
 			return true;
 		}
 		
-		// hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å° °ªÀÌ Á¸ÀçÇÏÁö ¾ÊÀ» °æ¿ì
+		// hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		return false;
 	}
 	public boolean changeAmount(Farm f, int amount) {
 		if(hMap.containsKey(f)) {
-			// hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å° °ªÀÌ Á¸ÀçÇÏ´Â °æ¿ì
-			// 	* Map µ¥ÀÌÅÍ Ãß°¡ ½Ã °°Àº Å° °ªÀÌ ÀÖ´Â °æ¿ì ÇØ´ç µ¥ÀÌÅÍ¸¦ µ¤¾î¾º¿ò.
+			// hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
+			// 	* Map ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½î¾ºï¿½ï¿½.
 			hMap.put(f, amount);
 			return true;
 		}
-		// hMap ³»¿¡ f¿¡ ÇØ´çÇÏ´Â Å° °ªÀÌ Á¸ÀçÇÏÁö ¾Ê´Â °æ¿ì
+		// hMap ï¿½ï¿½ï¿½ï¿½ fï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Å° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ ï¿½ï¿½ï¿½
 		return false;
 	}
 	
@@ -52,13 +52,13 @@ public class FarmController {
 	
 	public boolean buyFarm(Farm f) {
 		int amount = hMap.get(f);		// Wrapper class : hMap.get(f)
-										// ¿ÀÅä ¾ð¹Ú½Ì : Integer -> int
-										// ¿ÀÅä ¹Ú½Ì  : int -> Integer
-		if(hMap.containsKey(f)			// Àü´Þ¹ÞÀº f°¡ hMap ¾È¿¡ Á¸ÀçÇÏ´Â Áö
-				&& hMap.get(f) >= 0) {	// fÀÇ ¼ö·® -> hMap ³»¿¡¼­ value¸¦ ÀÇ¹Ì
-										// f(key)¿¡ ÇØ´çÇÏ´Â valueÀÇ °ªÀÌ 0 ÀÌ»óÀÎ Áö
-			list.add(f);				// list¿¡ µ¥ÀÌÅÍ Ãß°¡(f)
-			hMap.put(f, amount-1);		// hMap¿¡ fÀÇ ¼ö·® 1°¨¼Ò => 1 °¨¼Ò ÈÄ ´Ù½Ã ÀúÀå
+										// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ú½ï¿½ : Integer -> int
+										// ï¿½ï¿½ï¿½ï¿½ ï¿½Ú½ï¿½  : int -> Integer
+		if(hMap.containsKey(f)			// ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ fï¿½ï¿½ hMap ï¿½È¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½
+				&& hMap.get(f) >= 0) {	// fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ -> hMap ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ valueï¿½ï¿½ ï¿½Ç¹ï¿½
+										// f(key)ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ valueï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 0 ï¿½Ì»ï¿½ï¿½ï¿½ ï¿½ï¿½
+			list.add(f);				// listï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½(f)
+			hMap.put(f, amount-1);		// hMapï¿½ï¿½ fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ => 1 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			return true;
 		}
 		
@@ -67,10 +67,10 @@ public class FarmController {
 	
 	public boolean removeFarm(Farm f) {
 		if(list.contains(f)) {
-			// list¿¡ f¿¡ ´ëÇÑ µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏ´Â °æ¿ì
-			list.remove(f);				// ¸®½ºÆ®¿¡¼­ ÇØ´ç µ¥ÀÌÅÍ(f) Á¦°Å
+			// listï¿½ï¿½ fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
+			list.remove(f);				// ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(f) ï¿½ï¿½ï¿½ï¿½
 			
-			int amount = hMap.get(f);	// Map¿¡¼­ ¼ö·® 1 Áõ°¡
+			int amount = hMap.get(f);	// Mapï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½
 			hMap.put(f, amount+1);
 			return true;
 		}

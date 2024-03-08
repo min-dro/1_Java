@@ -1,15 +1,15 @@
 package com.kh.practice;
 /*
- * ½ÇÇÛ ¹æ¹ý
- * [1] »ó´Ü Àç»ý ¾ÆÀÌÄÁ Å¬¸¯
- * [2] Å°º¸µå Ctrl + F11 ÀÔ·Â
+ * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+ * [1] ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½
+ * [2] Å°ï¿½ï¿½ï¿½ï¿½ Ctrl + F11 ï¿½Ô·ï¿½
  */
-public class HelloWorld { // HelloWorld : Å¬·¡½º¸í
-	public static void main(String[] args) { // main : ¸Þ¼Òµå¸í
-//		System.out.println("Hello World!");  // È­¸é¿¡ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+public class HelloWorld { // HelloWorld : Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	public static void main(String[] args) { // main : ï¿½Þ¼Òµï¿½ï¿½
+//		System.out.println("Hello World!");  // È­ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Þ¼Òµï¿½
 //		System.out.println("Bye~!");
-		System.out.println("¾È³çÇÏ½Ê´Ï±î! Àú´Â Áö¹Î¼®ÀÔ´Ï´Ù.");
-		System.out.println("6°³¿ù µ¿¾È ¸¹Àº µµ¿òÀ» µå¸± ¼ö ÀÖµµ·Ï ÇÏ°Ú½À´Ï´Ù.");
-		System.out.println("Àß ºÎÅ¹µå¸³´Ï´Ù!");
+		System.out.println("ï¿½È³ï¿½ï¿½Ï½Ê´Ï±ï¿½! ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¼ï¿½ï¿½Ô´Ï´ï¿½.");
+		System.out.println("6ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½å¸± ï¿½ï¿½ ï¿½Öµï¿½ï¿½ï¿½ ï¿½Ï°Ú½ï¿½ï¿½Ï´ï¿½.");
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½Å¹ï¿½å¸³ï¿½Ï´ï¿½!");
 	}
 }
