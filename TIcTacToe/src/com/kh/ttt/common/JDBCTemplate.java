@@ -1,0 +1,82 @@
+package com.kh.ttt.common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCTemplate {
+	public static Connection getConnection() {
+		Connection conn = null;
+		try {
+			
+			// [1] jabc driver 등록
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			// [2] Connection 객체 생성
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "TICTACTOE", "ttt");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return conn;	
+	}
+	public static void commit(Connection conn) {
+		try {
+			// Connection 객체가 null이 아니고 close되지 않은 상태에서 commit
+			if(conn != null && !conn.isClosed()) {
+				conn.commit();
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	// 3. rollback 처리 해주는 메소드 (Connection 객체를 전달받아서)
+	public static void rollback(Connection conn) {
+		try {
+			
+			if (conn != null && !conn.isClosed()) {
+				conn.rollback();
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void close(Statement stmt) {
+		try {
+			// Statement 관련 객체가 null 이 아니고 close되어 있지 않은 상태라면 close처리(반납)
+			if (stmt != null && !stmt.isClosed()) {
+				stmt.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	// 5. Connection 객체 반납하는 메소드
+	public static void close(Connection conn) {
+		try {
+			if (conn != null && !conn.isClosed()) {
+				conn.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	// 6. ResultSet 객체 반납하는 메소드
+	public static void close(ResultSet rset) {
+		try {
+			if (rset != null && !rset.isClosed()) {
+				rset.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

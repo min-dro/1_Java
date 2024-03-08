@@ -1,0 +1,11 @@
+package com.kh.ttt.service;
+
+import com.kh.ttt.model.vo.Users;
+
+public class TictactoeService {
+	public int insertUser(Users u) {
+		
+		return 0;
+		
+	}
+}

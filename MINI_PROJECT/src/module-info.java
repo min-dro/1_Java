@@ -1,0 +1,2 @@
+module MINI_PROJECT {
+}

@@ -1,0 +1,45 @@
+package com.kh.condition;
+
+/*
+ * 반목문 while
+ * 
+ * 표현식
+ * 
+ * 			[초기식]
+ * 			while(조건식) {
+ * 				// 반복적으로 수행할 코드
+ * 				[증감식]
+ * 
+ * -동작 흐름
+ * 			조건식 ->
+ * 
+ * 		* 표현식
+ * 					[초기식]
+ * 					do {
+ * 						// 반복적으로 수행할 크드
+ * 						[증감식]
+ * 					} while(조건식);
+ * 		* 동작 흐름
+ * 													반복적으로 수행할 코드 출력
+ */
+		
+public class While {
+	public static void main(String[] args) {
+		
+		int num = 1;
+		while(num == 0 ) {
+			System.out.println(num);
+		}
+		// 결과 : 출력되는 값이 없다.
+		
+		do {
+			System.out.println("1) 짝수 입력:");
+			System.out.println("2) 홀수 입력");
+			System.out.println("9) 종료");
+			
+			if (sel != 1 && sel != 2 && sel != 9) {
+				
+			}
+		}
+	}
+}

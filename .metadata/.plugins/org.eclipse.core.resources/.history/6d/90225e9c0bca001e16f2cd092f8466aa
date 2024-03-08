@@ -1,0 +1,5 @@
+package com.kh.ttt.common;
+
+public class JDBCTemplate {
+
+}

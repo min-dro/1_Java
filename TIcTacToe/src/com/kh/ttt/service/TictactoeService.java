@@ -1,0 +1,21 @@
+package com.kh.ttt.service;
+
+import java.sql.Connection;
+
+import com.kh.ttt.common.JDBCTemplate;
+import com.kh.ttt.model.dao.TictactoeDao;
+import com.kh.ttt.model.vo.Users;
+
+public class TictactoeService {
+	public int insertUser(Users u) {
+		Connection conn = JDBCTemplate.getConnection();
+		int result = new TictactoeDao().insertUser(conn, u);
+		if (result > 0) {
+			JDBCTemplate.commit(conn);
+		} else {
+			JDBCTemplate.rollback(conn);
+		}
+		return result;
+		
+	}
+}

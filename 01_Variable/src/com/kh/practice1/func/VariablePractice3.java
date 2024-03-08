@@ -1,0 +1,19 @@
+package com.kh.practice1.func;
+
+import java.util.Scanner;
+
+public class VariablePractice3 {
+	public void Practice() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("가로 : ");
+		double a = sc.nextDouble();
+		System.out.print("세로 : ");
+		double b = sc.nextDouble();
+		
+		System.out.println("");
+		System.out.println("면적 : " + (a*b));
+		System.out.println("둘레 : " + 2*(a+b));
+
+		
+	}
+}

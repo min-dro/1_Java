@@ -1,0 +1,277 @@
+package com.kh.ttt.gameController;
+
+import java.io.IOException;
+import java.util.Scanner;
+import com.kh.ttt.model.vo.Users;
+import com.kh.ttt.NetworkController.*;
+
+public class TictactoeController implements Runnable {
+	Users u = new Users();
+	Server s = new Server();
+	Client c = new Client();
+	private Scanner scanner = new Scanner(System.in);
+	public int width = 0;
+	public int length = 0;
+	public char[][] frame = new char[4][4];
+	
+	public void insertUser(String userName) {
+		Users u = new Users(userName);
+	}
+
+	public void TicTactoe() {
+		int count = 0;
+		int userScore1 = u.getUvuScore();
+		int userScore2 = u.getUvuScore();
+		System.out.println("  0 1 2");
+		System.out.println("0");
+		System.out.println("1");
+		System.out.println("2");
+		while (true) {
+			if (count % 2 == 0) {
+				System.out.println(u.getUserName() + "님의 차례입니다.");
+			} else if (count % 2 == 1) {
+				System.out.println(u.getUserName() + "님의 차례입니다.");
+			}
+			while (true) {
+				System.out.print("가로 값을 입력하세요 : ");
+				length = scanner.nextInt();
+				System.out.print("세로 값을 입력하세요 : ");
+				width = scanner.nextInt();
+				if ((length != 2 && length != 1 && length != 0) || (width != 2 && width != 1 && width != 0)) {
+					System.out.println("원하는 값이 아닙니다. 다시입력해주세요.");
+				} else if (frame[width + 1][length + 1] == 'X' || frame[width + 1][length + 1] == 'O') {
+					System.out.println("해당 값에 이미 입력한 값이 있습니다. 다시입력해주세요.");
+				} else {
+					break;
+				}
+			}
+			char x = '0';
+			char y = '0';
+			width += 1;
+			length += 1;
+			for (int i = 0; i < frame.length; i++) {
+				for (int j = 0; j < frame.length; j++) {
+					if (i == 0 && j == 0) {
+						System.out.print("");
+					} else if (i == 0 || j == 0) {
+						if (j == 0) {
+							frame[i][j] = (char) x++;
+						} else {
+							frame[i][j] = (char) y++;
+						}
+					} else if (i == width && j == length) {
+						if (count % 2 == 0)
+							frame[i][j] = 'X';
+						else if (count % 2 == 1)
+							frame[i][j] = 'O';
+					} else {
+						System.out.print("");
+					}
+					System.out.print(frame[i][j] + " ");
+				}
+				System.out.println();
+			}
+			count++;
+			for (int k = 1; k < frame.length; k++) {
+				if ((frame[k][1] == 'X' && frame[k][2] == 'X' && frame[k][3] == 'X')
+						|| (frame[1][k] == 'X' && frame[2][k] == 'X' && frame[3][k] == 'X')
+						|| (frame[1][1] == 'X' && frame[2][2] == 'X' && frame[3][3] == 'X')
+						|| (frame[3][1] == 'X' && frame[2][2] == 'X' && frame[1][3] == 'X')) {
+					System.out.println(u.getUserName() + "님이 이겼습니다!");
+					u.setUvuScore(userScore1 + 1);
+					for (int i = 1; i < frame.length; i++) {
+						for (int j = 1; j < frame.length; j++) {
+							frame[i][j] = ' ';
+						}
+					}
+					return;
+				} else if ((frame[k][1] == 'O' && frame[k][2] == 'O' && frame[k][3] == 'O')
+						|| (frame[1][k] == 'O' && frame[2][k] == 'O' && frame[3][k] == 'O')
+						|| (frame[1][1] == 'O' && frame[2][2] == 'O' && frame[3][3] == 'O')
+						|| (frame[3][1] == 'O' && frame[2][2] == 'O' && frame[1][3] == 'O')) {
+					System.out.println(u.getUserName() + "님이 이겼습니다!");
+					u.setUvuScore(userScore2 + 1);
+					for (int i = 1; i < frame.length; i++) {
+						for (int j = 1; j < frame.length; j++) {
+							frame[i][j] = ' ';
+						}
+					}
+					return;
+				}
+			}
+			for (int i = 1; i < frame.length; i++) {
+				for (int j = 1; j < frame.length; j++) {
+					if ((frame[1][1] == 'X' || frame[1][1] == 'O') && (frame[1][2] == 'X' || frame[1][2] == 'O')
+							&& (frame[1][3] == 'X' || frame[1][3] == 'O') && (frame[2][1] == 'X' || frame[2][1] == 'O')
+							&& (frame[2][2] == 'X' || frame[2][2] == 'O') && (frame[2][3] == 'X' || frame[2][3] == 'O')
+							&& (frame[3][1] == 'X' || frame[3][1] == 'O') && (frame[3][2] == 'X' || frame[3][2] == 'O')
+							&& (frame[3][3] == 'X' || frame[3][3] == 'O')) {
+						System.out.println("비겼습니다!");
+						for (int k = 1; k < frame.length; k++) {
+							for (int l = 1; l < frame.length; l++) {
+								frame[k][l] = ' ';
+							}
+						}
+						return;
+					}
+				}
+			}
+		}
+	}
+
+	public void UservsCom(int num) {
+		int count = 0;
+		String name = null;
+		if(num == 1) {
+			 name = u.getUserName();
+			 count = 0;
+		} else if(num == 2) {
+			name = u.getUserName();
+			count = 1;
+		}
+		System.out.println("  0 1 2");
+		System.out.println("0");
+		System.out.println("1");
+		System.out.println("2");
+		while (true) {
+			if (count % 2 == 0) {
+				System.out.println(name + "님의 차례입니다.");
+				while (true) {
+					System.out.print("가로 값을 입력하세요 : ");
+					width = scanner.nextInt();
+					System.out.print("세로 값을 입력하세요 : ");
+					length = scanner.nextInt();
+					if ((length != 2 && length != 1 && length != 0) || (width != 2 && width != 1 && width != 0)) {
+						System.out.println("원하는 값이 아닙니다. 다시입력해주세요.");
+					} else if (frame[width + 1][length + 1] == 'X' || frame[width + 1][length + 1] == 'O') {
+						System.out.println("해당 값에 이미 입력한 값이 있습니다. 다시입력해주세요.");
+					} else {
+						break;
+					}
+				}
+			} else if (count % 2 == 1) {
+				System.out.println("com님의 차례입니다.");
+				run();
+				while (true) {
+					length = (int) (Math.random() * 3 + 0);
+					width = (int) (Math.random() * 3 + 0);
+					if (frame[width + 1][length + 1] == 'X' || frame[width + 1][length + 1] == 'O') {
+						continue;
+					} else {
+						break;
+					}
+				}
+			}
+			char x = '0';
+			char y = '0';
+			width += 1;
+			length += 1;
+			for (int i = 0; i < frame.length; i++) {
+				for (int j = 0; j < frame.length; j++) {
+					if (i == 0 && j == 0) {
+						System.out.print("");
+					} else if (i == 0 || j == 0) {
+						if (j == 0) {
+							frame[i][j] = (char) x++;
+						} else {
+							frame[i][j] = (char) y++;
+						}
+					} else if (i == width && j == length) {
+						if (count % 2 == 0)
+							frame[i][j] = 'X';
+						else if (count % 2 == 1)
+							frame[i][j] = 'O';
+					} else {
+						System.out.print("");
+					}
+					System.out.print(frame[i][j] + " ");
+				}
+				System.out.println();
+			}
+			count++;
+			for (int k = 1; k < frame.length; k++) {
+				if ((frame[k][1] == 'X' && frame[k][2] == 'X' && frame[k][3] == 'X')
+						|| (frame[1][k] == 'X' && frame[2][k] == 'X' && frame[3][k] == 'X')
+						|| (frame[1][1] == 'X' && frame[2][2] == 'X' && frame[3][3] == 'X')
+						|| (frame[3][1] == 'X' && frame[2][2] == 'X' && frame[1][3] == 'X')) {
+					System.out.println(name + "님이 이겼습니다!");
+					for (int i = 1; i < frame.length; i++) {
+						for (int j = 1; j < frame.length; j++) {
+							frame[i][j] = ' ';
+						}
+					}
+					return;
+				} else if ((frame[k][1] == 'O' && frame[k][2] == 'O' && frame[k][3] == 'O')
+						|| (frame[1][k] == 'O' && frame[2][k] == 'O' && frame[3][k] == 'O')
+						|| (frame[1][1] == 'O' && frame[2][2] == 'O' && frame[3][3] == 'O')
+						|| (frame[3][1] == 'O' && frame[2][2] == 'O' && frame[1][3] == 'O')) {
+					System.out.println("com님이 이겼습니다!");
+
+					for (int i = 1; i < frame.length; i++) {
+						for (int j = 1; j < frame.length; j++) {
+							frame[i][j] = ' ';
+						}
+					}
+					return;
+				}
+			}
+			for (int i = 1; i < frame.length; i++) {
+				for (int j = 1; j < frame.length; j++) {
+					if ((frame[1][1] == 'X' || frame[1][1] == 'O') && (frame[1][2] == 'X' || frame[1][2] == 'O')
+							&& (frame[1][3] == 'X' || frame[1][3] == 'O') && (frame[2][1] == 'X' || frame[2][1] == 'O')
+							&& (frame[2][2] == 'X' || frame[2][2] == 'O') && (frame[2][3] == 'X' || frame[2][3] == 'O')
+							&& (frame[3][1] == 'X' || frame[3][1] == 'O') && (frame[3][2] == 'X' || frame[3][2] == 'O')
+							&& (frame[3][3] == 'X' || frame[3][3] == 'O')) {
+						System.out.println("비겼습니다!");
+						for (int k = 1; k < frame.length; k++) {
+							for (int l = 1; l < frame.length; l++) {
+								frame[k][l] = ' ';
+							}
+						}
+						return;
+					}
+				}
+			}
+		}
+	}
+	public void OnlineMatching(int num){
+		if(num == 1) {
+//			s.Main();
+			System.out.println("==공사중==");
+		} else if(num == 2) {
+//			c.Main();
+			System.out.println("==공사중==");
+		}
+		
+	}
+	public void Changename1(String user1) {
+		u.setUserName(user1);
+	}
+
+	public String User1name() {
+		return u.getUserName();
+	}
+
+	public void Changename2(String user2) {
+		u.setUserName(user2);
+	}
+
+	public String User2name() {
+		return u.getUserName();
+	}
+
+	public void Score() {
+		System.out.println(u.toString());
+	}
+
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

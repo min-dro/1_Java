@@ -1,0 +1,31 @@
+package com.kh.ttt.model.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.kh.ttt.common.JDBCTemplate;
+import com.kh.ttt.model.vo.Users;
+
+public class TictactoeDao {
+	public int insertUser(Connection conn, Users u) {
+		PreparedStatement pstmt = null;
+		int result = 0;
+		String sql = "INSERT INTO TICTACTOE VALUES (SEQ_TTT.NEXTVAL, ?, 0, 0, 0)";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, u.getUserName());
+			
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JDBCTemplate.close(pstmt);
+		}
+		return result;
+		
+	}
+}
